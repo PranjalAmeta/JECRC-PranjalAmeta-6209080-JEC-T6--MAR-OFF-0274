@@ -72,25 +72,65 @@ of an HTML attribute from a web element.
 # funcn()
 
 
-driver.get("https://www.flipkart.com")
-sleep(2)
-button_cross=driver.find_element(By.XPATH,"//span[text()='✕']")
-button_cross.click()
-sleep(2)
-search_field=driver.find_element(By.XPATH,"//input[@class='nw1UBF v1zwn25']")
-search_field.clear()
-search_field.send_keys("Asus Rog")
-sleep(2)
-print(search_field.get_attribute("value"))   # value will return us the value only
-search_button=driver.find_element(By.XPATH,"//button[@type='submit']")
-search_button.click()
-sleep(2)
-filter_cl=driver.find_element(By.XPATH,"//div[@title='4★ & above']/descendant::div[@class='ybaCDx']")
-filter_cl.click()
-print(filter_cl.text)
-sleep(2)
+# driver.get("https://www.flipkart.com")
+# sleep(2)
+# button_cross=driver.find_element(By.XPATH,"//span[text()='✕']")
+# button_cross.click()
+# sleep(2)
+# search_field=driver.find_element(By.XPATH,"//input[@class='nw1UBF v1zwn25']")
+# search_field.clear()
+# search_field.send_keys("Asus Rog")
+# sleep(2)
+# print(search_field.get_attribute("value"))   # value will return us the value only
+# search_button=driver.find_element(By.XPATH,"//button[@type='submit']")
+# search_button.click()
+# sleep(2)
+# filter_cl=driver.find_element(By.XPATH,"//div[@title='4★ & above']/descendant::div[@class='ybaCDx']")
+# filter_cl.click()
+# print(filter_cl.text)
+# sleep(2)
 
 
 
 
-# is_displayed() -
+'''
+var_name.is_displayed()  -> gives true if it is visible on screen
+var_name.is_enabled()    -> gives true if a button is enabled or not (only for buttons)  use only after writing in a text field
+var_name.is_selected()   -> gives true if a checkbox,radio is selected or not
+'''
+
+# driver.get('https://testautomationpractice.blogspot.com/')
+# sleep(5)
+# female=driver.find_element(By.ID,'female')
+# print(female.is_displayed())
+#
+# sunday_button=driver.find_element(By.ID,'sunday')
+# sunday_button.click()
+#
+# print(sunday_button.is_enabled())
+#
+# print(sunday_button.is_selected())
+#
+# name_button=driver.find_element(By.ID,'name')
+# # name_button.send_keys('hello')
+#
+# print(name_button.is_enabled())           # True bcoz we can write in it
+
+# print(name_button.is_selected())
+
+
+'''
+assert :- 
+is assert true if an element is there and will continue to execute next line 
+or 
+return assertion error otherwise'''
+
+
+driver.get('https://www.lenskart.com/')
+sleep(3)
+
+eye_glass=driver.find_element(By.ID,'lrd1')
+
+assert 'EYEGLASSES' in eye_glass.text,'couldnt find'         # if cant find will return couldnt find
+
+driver.quit()
