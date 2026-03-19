@@ -4,7 +4,7 @@ from selenium.webdriver.support.select import Select
 from time import sleep
 
 driver=webdriver.Chrome()
-'''
+
 driver.get('https://the-internet.herokuapp.com/')
 sleep(4)
 
@@ -16,7 +16,7 @@ print('drag_drop found')
 
 li_count=driver.find_elements(By.TAG_NAME,'li')
 print('li count is:',len(li_count))
-'''
+
 
 driver.get('https://the-internet.herokuapp.com/tables')
 sleep(4)
