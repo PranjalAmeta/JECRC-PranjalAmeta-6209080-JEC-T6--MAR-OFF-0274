@@ -6,7 +6,7 @@ driver=webdriver.Chrome()
 driver.get("https://testautomationpractice.blogspot.com/")
 driver.maximize_window()
 sleep(3)
-
+#
 # # link text
 # driver.find_element(By.LINK_TEXT,"Udemy Courses")
 # print('fund link text')
