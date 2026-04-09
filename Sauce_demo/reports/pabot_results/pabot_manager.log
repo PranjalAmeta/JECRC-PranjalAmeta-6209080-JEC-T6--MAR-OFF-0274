@@ -1,0 +1,50 @@
+[INFO]    Initialized logging in reports\pabot_results
+[INFO]    Robot Framework remote server at 127.0.0.1:8270 started.
+[DEBUG]   Storing .pabotsuitenames file
+[DEBUG]   2026-04-04 14:11:51.866235 [PID:16672] [1] [ID:1] EXECUTING Tests.Functional.Test Login Page.Checking Login
+[DEBUG]   2026-04-04 14:11:51.866235 [PID:4568] [0] [ID:0] EXECUTING Tests.Functional.Test Cart.TC01 Searching Product
+[DEBUG]   2026-04-04 14:11:51.866235 [PID:19364] [3] [ID:3] EXECUTING Tests.Test Datadriven Login.Execl Data Driven Testing
+[DEBUG]   2026-04-04 14:11:51.866235 [PID:24620] [2] [ID:2] EXECUTING Tests.Functional.Test Signup Page.TC01 Register User
+[INFO]    2026-04-04 14:11:53.679911 [PID:24620] [2] [ID:2] FAILED Tests.Functional.Test Signup Page.TC01 Register User
+[INFO]    2026-04-04 14:11:53.679911 [PID:4568] [0] [ID:0] FAILED Tests.Functional.Test Cart.TC01 Searching Product
+[INFO]    2026-04-04 14:11:55.478098 [PID:19364] [3] [ID:3] IGNORED Tests.Test Datadriven Login.Execl Data Driven Testing
+[DEBUG]   2026-04-04 14:11:55.478098 [PID:5832] [0] [ID:4] EXECUTING Tests.Test Datadriven Login
+[DEBUG]   2026-04-04 14:11:55.478098 [PID:25032] [1] [ID:5] EXECUTING Tests.Test Datadriven Login
+[DEBUG]   2026-04-04 14:11:55.493422 [PID:7056] [2] [ID:6] EXECUTING Tests.Test Datadriven Login
+[DEBUG]   2026-04-04 14:11:57.156604 [PID:16672] [1] [ID:1] still running Tests.Functional.Test Login Page.Checking Login after 5.0s
+[DEBUG]   2026-04-04 14:12:00.845451 [PID:25032] [1] [ID:5] still running Tests.Test Datadriven Login after 5.0s
+[DEBUG]   2026-04-04 14:12:00.928134 [PID:5832] [0] [ID:4] still running Tests.Test Datadriven Login after 5.0s
+[DEBUG]   2026-04-04 14:12:00.956604 [PID:7056] [2] [ID:6] still running Tests.Test Datadriven Login after 5.0s
+[DEBUG]   2026-04-04 14:12:07.975286 [PID:16672] [1] [ID:1] still running Tests.Functional.Test Login Page.Checking Login after 15.0s
+[INFO]    2026-04-04 14:12:09.558797 [PID:16672] [1] [ID:1] PASSED Tests.Functional.Test Login Page.Checking Login in 17.7 seconds
+[DEBUG]   2026-04-04 14:12:09.558797 [PID:27456] [3] [ID:7] EXECUTING Tests.Test Datadriven Login
+[DEBUG]   2026-04-04 14:12:11.552194 [PID:25032] [1] [ID:5] still running Tests.Test Datadriven Login after 15.0s
+[DEBUG]   2026-04-04 14:12:11.659523 [PID:5832] [0] [ID:4] still running Tests.Test Datadriven Login after 15.0s
+[DEBUG]   2026-04-04 14:12:11.669638 [PID:7056] [2] [ID:6] still running Tests.Test Datadriven Login after 15.0s
+[DEBUG]   2026-04-04 14:12:15.006732 [PID:27456] [3] [ID:7] still running Tests.Test Datadriven Login after 5.0s
+[DEBUG]   2026-04-04 14:12:25.798067 [PID:27456] [3] [ID:7] still running Tests.Test Datadriven Login after 15.0s
+[DEBUG]   2026-04-04 14:12:27.651719 [PID:25032] [1] [ID:5] still running Tests.Test Datadriven Login after 30.0s
+[DEBUG]   2026-04-04 14:12:27.826878 [PID:5832] [0] [ID:4] still running Tests.Test Datadriven Login after 30.0s
+[DEBUG]   2026-04-04 14:12:27.826878 [PID:7056] [2] [ID:6] still running Tests.Test Datadriven Login after 30.0s
+[DEBUG]   2026-04-04 14:12:41.947591 [PID:27456] [3] [ID:7] still running Tests.Test Datadriven Login after 30.0s
+[DEBUG]   2026-04-04 14:12:49.159130 [PID:25032] [1] [ID:5] still running Tests.Test Datadriven Login after 50.0s
+[DEBUG]   2026-04-04 14:12:49.527964 [PID:5832] [0] [ID:4] still running Tests.Test Datadriven Login after 50.0s
+[DEBUG]   2026-04-04 14:12:49.529996 [PID:7056] [2] [ID:6] still running Tests.Test Datadriven Login after 50.0s
+[DEBUG]   2026-04-04 14:13:03.685543 [PID:27456] [3] [ID:7] still running Tests.Test Datadriven Login after 50.0s
+[INFO]    2026-04-04 14:13:09.879154 [PID:25032] [1] [ID:5] PASSED Tests.Test Datadriven Login in 74.4 seconds
+[INFO]    2026-04-04 14:13:10.095237 [PID:7056] [2] [ID:6] PASSED Tests.Test Datadriven Login in 74.6 seconds
+[INFO]    2026-04-04 14:13:10.095237 [PID:5832] [0] [ID:4] PASSED Tests.Test Datadriven Login in 74.6 seconds
+[DEBUG]   2026-04-04 14:13:30.382141 [PID:27456] [3] [ID:7] still running Tests.Test Datadriven Login after 75.0s
+[INFO]    2026-04-04 14:13:35.776302 [PID:27456] [3] [ID:7] PASSED Tests.Test Datadriven Login in 86.2 seconds
+[INFO]    9 tests, 7 passed, 2 failed, 0 skipped.
+[INFO]    ===================================================
+[INFO]    Output:  C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&Robot\Projects\Sauce_demo\reports\output.xml
+[INFO]    Log:     C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&Robot\Projects\Sauce_demo\reports\log.html
+[INFO]    Report:  C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&Robot\Projects\Sauce_demo\reports\report.html
+[DEBUG]   Finalizing Pabot execution...
+[DEBUG]   Stopping PabotLib process
+[INFO]    Robot Framework remote server at 127.0.0.1:8270 stopped.
+[DEBUG]   PabotLib process stopped
+[INFO]    Total testing: 5 minutes 34.70 seconds
+[INFO]    Elapsed time:  1 minute 46.67 seconds
+[DEBUG]   Logs flushed successfully.

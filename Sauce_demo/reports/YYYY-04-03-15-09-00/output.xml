@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-04-03T15:09:00.956026" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Cart" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Sauce_demo\tests\functional\test_cart.robot">
+<kw name="Load Environment" owner="common_resources" type="SETUP">
+<kw name="Load Env" owner="env_loader">
+<arg>${ENV}</arg>
+<status status="PASS" start="2026-04-03T15:09:01.328424" elapsed="0.000997"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T15:09:01.330426" level="INFO">${BASE_URL} = https://sauce-demo.myshopify.com</msg>
+<var>${BASE_URL}</var>
+<arg>BASEURL</arg>
+<status status="PASS" start="2026-04-03T15:09:01.330426" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T15:09:01.330426" level="INFO">${FIRST_NAME} = abc</msg>
+<var>${FIRST_NAME}</var>
+<arg>FIRST_NAME</arg>
+<status status="PASS" start="2026-04-03T15:09:01.330426" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T15:09:01.331433" level="INFO">${LAST_NAME} = pqr</msg>
+<var>${LAST_NAME}</var>
+<arg>LAST_NAME</arg>
+<status status="PASS" start="2026-04-03T15:09:01.331433" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T15:09:01.331433" level="INFO">${EMAIL} = abc@gmail.com</msg>
+<var>${EMAIL}</var>
+<arg>EMAIL</arg>
+<status status="PASS" start="2026-04-03T15:09:01.331433" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T15:09:01.331433" level="INFO">${PASSWORD} = prank</msg>
+<var>${PASSWORD}</var>
+<arg>PASSWORD</arg>
+<status status="PASS" start="2026-04-03T15:09:01.331433" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T15:09:01.332429" level="INFO">${PRODUCT} = Shirts</msg>
+<var>${PRODUCT}</var>
+<arg>PRODUCT</arg>
+<status status="PASS" start="2026-04-03T15:09:01.332429" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T15:09:01.332429" level="INFO">${BASE_URL} = https://sauce-demo.myshopify.com</msg>
+<arg>${BASE_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T15:09:01.332429" elapsed="0.000991"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T15:09:01.333420" level="INFO">${FIRST_NAME} = abc</msg>
+<arg>${FIRST_NAME}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T15:09:01.333420" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T15:09:01.334427" level="INFO">${LAST_NAME} = pqr</msg>
+<arg>${LAST_NAME}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T15:09:01.333420" elapsed="0.001007"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T15:09:01.334427" level="INFO">${EMAIL} = abc@gmail.com</msg>
+<arg>${EMAIL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T15:09:01.334427" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T15:09:01.335440" level="INFO">${PASSWORD} = prank</msg>
+<arg>${PASSWORD}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T15:09:01.335440" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T15:09:01.336438" level="INFO">${PRODUCT} = Shirts</msg>
+<arg>${PRODUCT}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T15:09:01.335440" elapsed="0.000998"/>
+</kw>
+<status status="PASS" start="2026-04-03T15:09:01.327438" elapsed="0.009000"/>
+</kw>
+<test id="s1-t1" name="TC01 Searching Product" line="10">
+<kw name="Open Application" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-03T15:09:01.337439" level="INFO">Opening browser 'chrome' to base url 'https://sauce-demo.myshopify.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-03T15:09:01.337439" elapsed="4.484175"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-03T15:09:05.821614" elapsed="0.040998"/>
+</kw>
+<doc>Opens the application</doc>
+<status status="PASS" start="2026-04-03T15:09:01.337439" elapsed="4.525173"/>
+</kw>
+<kw name="Search For a Product" owner="prod_catalog_page">
+<msg time="2026-04-03T15:09:05.863614" level="FAIL">Keyword 'prod_catalog_page.Search For a Product' expected 0 arguments, got 1.</msg>
+<arg>${PRODUCT}</arg>
+<doc>Searching for a product</doc>
+<status status="FAIL" start="2026-04-03T15:09:05.863614" elapsed="0.001011">Keyword 'prod_catalog_page.Search For a Product' expected 0 arguments, got 1.</status>
+</kw>
+<kw name="Close Application" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-03T15:09:05.866612" elapsed="6.201327"/>
+</kw>
+<status status="PASS" start="2026-04-03T15:09:05.865614" elapsed="6.203311"/>
+</kw>
+<doc>searching for product</doc>
+<tag>functional</tag>
+<status status="FAIL" start="2026-04-03T15:09:01.336438" elapsed="10.732487">Keyword 'prod_catalog_page.Search For a Product' expected 0 arguments, got 1.</status>
+</test>
+<status status="FAIL" start="2026-04-03T15:09:00.959023" elapsed="11.110901"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">functional</stat>
+</tag>
+<suite>
+<stat name="Test Cart" id="s1" pass="0" fail="1" skip="0">Test Cart</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

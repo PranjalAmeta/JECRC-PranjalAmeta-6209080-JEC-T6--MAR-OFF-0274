@@ -1,0 +1,8 @@
+datasources:6873287d0d8b43d416906067e9121629b8ddf035
+commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
+suitesfrom:no-suites-from-option
+file:56f5dca344ba5484352eccd45b7ffbd7d90f3215
+--test Tests.Functional.Test Cart.TC01 Searching Product
+--test Tests.Functional.Test Login Page.Checking Login
+--test Tests.Functional.Test Signup Page.TC01 Register User
+--test Tests.Test Datadriven Login.Execl Data Driven Testing

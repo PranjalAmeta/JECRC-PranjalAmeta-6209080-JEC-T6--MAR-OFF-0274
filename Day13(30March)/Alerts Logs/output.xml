@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-03-30T12:56:33.672447" rpa="false" schemaversion="5">
+<suite id="s1" name="Alerts" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Day13(30March)\Alerts.robot">
+<test id="s1-t1" name="Simple Alert" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-30T12:56:34.043292" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/javascript_alerts'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-30T12:56:34.042284" elapsed="10.093609"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-30T12:56:44.136893" elapsed="0.037503"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T12:56:47.188702" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T12:56:44.175397" elapsed="3.013305"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T12:56:47.190700" level="INFO">Clicking element 'xpath=//button[@onclick='jsAlert()']'.</msg>
+<arg>xpath=//button[@onclick='jsAlert()']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T12:56:47.189697" elapsed="0.120532"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T12:56:49.312803" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T12:56:47.311248" elapsed="2.001555"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2026-03-30T12:56:49.313814" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2026-03-30T12:56:49.313814" elapsed="0.011000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T12:56:51.328147" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T12:56:49.325810" elapsed="2.003326"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-30T12:56:51.330158" elapsed="2.197404"/>
+</kw>
+<status status="PASS" start="2026-03-30T12:56:34.041284" elapsed="19.487255"/>
+</test>
+<test id="s1-t2" name="Confirmation Alert" line="18">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-30T12:56:53.531561" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/javascript_alerts'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-30T12:56:53.530561" elapsed="6.772685"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-30T12:57:00.303246" elapsed="0.037544"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T12:57:03.356765" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T12:57:00.341780" elapsed="3.014985"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T12:57:03.357773" level="INFO">Clicking element 'xpath=//button[@onclick='jsConfirm()']'.</msg>
+<arg>xpath=//button[@onclick='jsConfirm()']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T12:57:03.357773" elapsed="0.096642"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T12:57:05.457323" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T12:57:03.455428" elapsed="2.001895"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2026-03-30T12:57:05.458065" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg time="2026-03-30T12:57:05.466164" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Alert Text: I am a JS Confirm
+Message: unexpected alert open: {Alert text : I am a JS Confirm}
+  (Session info: chrome=146.0.7680.165)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6183529c5+2ed785]
+	chromedriver!GetHandleVerifier [0x7ff61807a0d0+14e90]
+	chromedriver!(No symbol) [0x7ff617dddb2d]
+	chromedriver!(No symbol) [0x7ff617e8461b]
+	chromedriver!(No symbol) [0x7ff617e29298]
+	chromedriver!(No symbol) [0x7ff617e2a183]
+	chromedriver!GetHandleVerifier [0x7ff61837de0d+318bcd]
+	chromedriver!GetHandleVerifier [0x7ff618378588+313348]
+	chromedriver!GetHandleVerifier [0x7ff618399d7a+334b3a]
+	chromedriver!GetHandleVerifier [0x7ff618096785+31545]
+	chromedriver!GetHandleVerifier [0x7ff61809facc+3a88c]
+	chromedriver!GetHandleVerifier [0x7ff618083634+1e3f4]
+	chromedriver!GetHandleVerifier [0x7ff6180837e6+1e5a6]
+	chromedriver!GetHandleVerifier [0x7ff618067e37+2bf7]
+	KERNEL32!BaseThreadInitThunk [0x7ffa5e82e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffa6004c48c+2c]
+</msg>
+<msg time="2026-03-30T12:57:05.467159" level="FAIL">ValueError: Invalid alert action 'CONFIRM'.</msg>
+<arg>action=CONFIRM</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="FAIL" start="2026-03-30T12:57:05.458065" elapsed="0.041645">ValueError: Invalid alert action 'CONFIRM'.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-03-30T12:57:05.500700" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-03-30T12:57:05.501697" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-03-30T12:56:53.529550" elapsed="11.973158">ValueError: Invalid alert action 'CONFIRM'.</status>
+</test>
+<test id="s1-t3" name="Prompt Alert" line="29">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-30T12:57:05.505695" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/javascript_alerts'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-30T12:57:05.504703" elapsed="5.916350"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-30T12:57:11.422041" elapsed="0.039009"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T12:57:14.473015" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T12:57:11.462041" elapsed="3.011970"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T12:57:14.474980" level="INFO">Clicking element 'xpath=//button[@onclick='jsPrompt()']'.</msg>
+<arg>xpath=//button[@onclick='jsPrompt()']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T12:57:14.474980" elapsed="0.100611"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T12:57:16.592171" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T12:57:14.576607" elapsed="2.015564"/>
+</kw>
+<kw name="Input Text Into Alert" owner="SeleniumLibrary">
+<arg>hello</arg>
+<doc>Types the given ``text`` into an input field in an alert.</doc>
+<status status="PASS" start="2026-03-30T12:57:16.593144" elapsed="0.011469"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T12:57:18.613481" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T12:57:16.605616" elapsed="2.007865"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-30T12:57:18.614481" elapsed="2.180893"/>
+</kw>
+<status status="PASS" start="2026-03-30T12:57:05.503710" elapsed="15.292664"/>
+</test>
+<status status="FAIL" start="2026-03-30T12:56:33.675481" elapsed="47.121882"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Alerts" id="s1" pass="2" fail="1" skip="0">Alerts</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-03-30T12:57:05.466164" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Alert Text: I am a JS Confirm
+Message: unexpected alert open: {Alert text : I am a JS Confirm}
+  (Session info: chrome=146.0.7680.165)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6183529c5+2ed785]
+	chromedriver!GetHandleVerifier [0x7ff61807a0d0+14e90]
+	chromedriver!(No symbol) [0x7ff617dddb2d]
+	chromedriver!(No symbol) [0x7ff617e8461b]
+	chromedriver!(No symbol) [0x7ff617e29298]
+	chromedriver!(No symbol) [0x7ff617e2a183]
+	chromedriver!GetHandleVerifier [0x7ff61837de0d+318bcd]
+	chromedriver!GetHandleVerifier [0x7ff618378588+313348]
+	chromedriver!GetHandleVerifier [0x7ff618399d7a+334b3a]
+	chromedriver!GetHandleVerifier [0x7ff618096785+31545]
+	chromedriver!GetHandleVerifier [0x7ff61809facc+3a88c]
+	chromedriver!GetHandleVerifier [0x7ff618083634+1e3f4]
+	chromedriver!GetHandleVerifier [0x7ff6180837e6+1e5a6]
+	chromedriver!GetHandleVerifier [0x7ff618067e37+2bf7]
+	KERNEL32!BaseThreadInitThunk [0x7ffa5e82e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffa6004c48c+2c]
+</msg>
+</errors>
+</robot>

@@ -1,0 +1,24 @@
+==============================================================================
+Tests
+==============================================================================
+Tests.Functional
+==============================================================================
+Tests.Functional.Test Signup Page
+==============================================================================
+TC01 Register User :: check if the user is able to register           | FAIL |
+Parent suite setup failed:
+No keyword with name 'Load Environment' found. Did you try using keyword 'env_loader.Load Env' and forgot to use enough whitespace between keyword and arguments?
+------------------------------------------------------------------------------
+Tests.Functional.Test Signup Page                                     | FAIL |
+Suite setup failed:
+No keyword with name 'Load Environment' found. Did you try using keyword 'env_loader.Load Env' and forgot to use enough whitespace between keyword and arguments?
+
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.Functional                                                      | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&Robot\Projects\Sauce_demo\reports\pabot_results\2\output.xml

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-04-02T10:57:02.966842" rpa="false" schemaversion="5">
+<suite id="s1" name="FrameWork" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Day14(2April)\FrameWork.robot">
+<test id="s1-t1" name="checking reports" line="22">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-02T10:57:03.334208" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.in'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-02T10:57:03.334208" elapsed="13.278017"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-02T10:57:16.612225" elapsed="0.253473"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-02T10:57:16.867434" level="WARN">navigated to amazon</msg>
+<arg>navigated to amazon</arg>
+<arg>Warn</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-02T10:57:16.865698" elapsed="0.002252"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-02T10:57:16.867950" elapsed="2.203531"/>
+</kw>
+<status status="PASS" start="2026-04-02T10:57:03.334208" elapsed="15.737273"/>
+</test>
+<status status="PASS" start="2026-04-02T10:57:02.966842" elapsed="16.104639"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="FrameWork" id="s1" pass="1" fail="0" skip="0">FrameWork</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-04-02T10:57:16.867434" level="WARN">navigated to amazon</msg>
+</errors>
+</robot>

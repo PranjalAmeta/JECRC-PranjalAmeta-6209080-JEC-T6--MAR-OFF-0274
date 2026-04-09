@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-04-02T12:02:57.974274" rpa="false" schemaversion="5">
+<suite id="s1" name="FrameWork" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Day14(2April)\FrameWork.robot">
+<test id="s1-t1" name="checking reports" line="22">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-02T12:02:58.414070" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.in'.</msg>
+<msg time="2026-04-02T12:02:58.623406" level="WARN">There was an error managing chromedriver (error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)); using driver found in the cache</msg>
+<msg time="2026-04-02T12:02:58.623406" level="WARN">Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)</msg>
+<msg time="2026-04-02T12:03:00.208787" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-02T12:03:00.209788" level="FAIL">WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=146.0.7680.165)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff7f32210a5+14cc5]
+	chromedriver!GetHandleVerifier [0x7ff7f3221110+14d30]
+	chromedriver!(No symbol) [0x7ff7f2f8db6d]
+	chromedriver!(No symbol) [0x7ff7f2f8a694]
+	chromedriver!(No symbol) [0x7ff7f2f7a701]
+	chromedriver!(No symbol) [0x7ff7f2f7c5ef]
+	chromedriver!(No symbol) [0x7ff7f2f7aca3]
+	chromedriver!(No symbol) [0x7ff7f2f7a46b]
+	chromedriver!(No symbol) [0x7ff7f2f7a121]
+	chromedriver!(No symbol) [0x7ff7f2f77d6b]
+	chromedriver!(No symbol) [0x7ff7f2f784b2]
+	chromedriver!(No symbol) [0x7ff7f2f91e26]
+	chromedriver!(No symbol) [0x7ff7f3034da4]
+	chromedriver!(No symbol) [0x7ff7f301036a]
+	chromedriver!(No symbol) [0x7ff7f3033f7b]
+	chromedriver!(No symbol) [0x7ff7f2fd96e8]
+	chromedriver!(No symbol) [0x7ff7f2fda5d3]
+	chromedriver!GetHandleVerifier [0x7ff7f3525ddd+3199fd]
+	chromedriver!GetHandleVerifier [0x7ff7f35204bd+3140dd]
+	chromedriver!GetHandleVerifier [0x7ff7f35429ba+3365da]
+	chromedriver!GetHandleVerifier [0x7ff7f323ca45+30665]
+	chromedriver!GetHandleVerifier [0x7ff7f3245b9c+397bc]
+	chromedriver!GetHandleVerifier [0x7ff7f322a4c4+1e0e4]
+	chromedriver!GetHandleVerifier [0x7ff7f322a676+1e296]
+	chromedriver!GetHandleVerifier [0x7ff7f320ef87+2ba7]
+	KERNEL32!BaseThreadInitThunk [0x7ffae1b1e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffae30cc48c+2c]
+</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2026-04-02T12:02:58.414070" elapsed="1.803722">WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=146.0.7680.165)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff7f32210a5+14cc5]
+	chromedriver!GetHandleVerifier [0x7ff7f3221110+14d30]
+	chromedriver!(No symbol) [0x7ff7f2f8db6d]
+	chromedriver!(No symbol) [0x7ff7f2f8a694]
+	chromedriver!(No symbol) [0x7ff7f2f7a701]
+	chromedriver!(No symbol) [0x7ff7f2f7c5ef]
+	chromedriver!(No symbol) [0x7ff7f2f7aca3]
+	chromedriver!(No symbol) [0x7ff7f2f7a46b]
+	chromedriver!(No symbol) [0x7ff7f2f7a121]
+	chromedriver!(No symbol) [0x7ff7f2f77d6b]
+	chromedriver!(No symbol) [0x7ff7f2f784b2]
+	chromedriver!(No symbol) [0x7ff7f2f91e26]
+	chromedriver!(No symbol) [0x7ff7f3034da4]
+	chromedriver!(No symbol) [0x7ff7f301036a]
+	chromedriver!(No symbol) [0x7ff7f3033f7b]
+	chromedriver!(No symbol) [0x7ff7f2fd96e8]
+	chromedriver!(No symbol) [0x7ff7f2fda5d3]
+	chromedriver!GetHandleVerifier [0x7ff7f3525ddd+3199fd]
+	chromedriver!GetHandleVerifier [0x7ff7f35204bd+3140dd]
+	chromedriver!GetHandleVerifier [0x7ff7f35429ba+3365da]
+	chromedriver!GetHandleVerifier [0x7ff7f323ca45+30665]
+	chromedriver!GetHandleVerifier [0x7ff7f3245b9c+397bc]
+	chromedriver!GetHandleVerifier [0x7ff7f322a4c4+1e0e4]
+	chromedriver!GetHandleVerifier [0x7ff7f322a676+1e296]
+	chromedriver!GetHandleVerifier [0x7ff7f320ef87+2ba7]
+	KERNEL32!BaseThreadInitThunk [0x7ffae1b1e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffae30cc48c+2c]
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2026-04-02T12:03:00.218784" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>navigated to amazon</arg>
+<arg>Warn</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-04-02T12:03:00.218784" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-04-02T12:03:00.219781" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-04-02T12:02:58.414070" elapsed="1.805711">WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=146.0.7680.165)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff7f32210a5+14cc5]
+	chromedriver!GetHandleVerifier [0x7ff7f3221110+14d30]
+	chromedriver!(No symbol) [0x7ff7f2f8db6d]
+	chromedriver!(No symbol) [0x7ff7f2f8a694]
+	chromedriver!(No symbol) [0x7ff7f2f7a701]
+	chromedriver!(No symbol) [0x7ff7f2f7c5ef]
+	chromedriver!(No symbol) [0x7ff7f2f7aca3]
+	chromedriver!(No symbol) [0x7ff7f2f7a46b]
+	chromedriver!(No symbol) [0x7ff7f2f7a121]
+	chromedriver!(No symbol) [0x7ff7f2f77d6b]
+	chromedriver!(No symbol) [0x7ff7f2f784b2]
+	chromedriver!(No symbol) [0x7ff7f2f91e26]
+	chromedriver!(No symbol) [0x7ff7f3034da4]
+	chromedriver!(No symbol) [0x7ff7f301036a]
+	chromedriver!(No symbol) [0x7ff7f3033f7b]
+	chromedriver!(No symbol) [0x7ff7f2fd96e8]
+	chromedriver!(No symbol) [0x7ff7f2fda5d3]
+	chromedriver!GetHandleVerifier [0x7ff7f3525ddd+3199fd]
+	chromedriver!GetHandleVerifier [0x7ff7f35204bd+3140dd]
+	chromedriver!GetHandleVerifier [0x7ff7f35429ba+3365da]
+	chromedriver!GetHandleVerifier [0x7ff7f323ca45+30665]
+	chromedriver!GetHandleVerifier [0x7ff7f3245b9c+397bc]
+	chromedriver!GetHandleVerifier [0x7ff7f322a4c4+1e0e4]
+	chromedriver!GetHandleVerifier [0x7ff7f322a676+1e296]
+	chromedriver!GetHandleVerifier [0x7ff7f320ef87+2ba7]
+	KERNEL32!BaseThreadInitThunk [0x7ffae1b1e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffae30cc48c+2c]
+</status>
+</test>
+<status status="FAIL" start="2026-04-02T12:02:57.990339" elapsed="2.231440"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="FrameWork" id="s1" pass="0" fail="1" skip="0">FrameWork</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-04-02T12:02:58.623406" level="WARN">There was an error managing chromedriver (error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)); using driver found in the cache</msg>
+<msg time="2026-04-02T12:02:58.623406" level="WARN">Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)</msg>
+</errors>
+</robot>

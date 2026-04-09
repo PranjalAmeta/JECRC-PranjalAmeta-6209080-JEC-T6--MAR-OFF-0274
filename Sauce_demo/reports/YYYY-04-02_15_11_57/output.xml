@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-04-02T15:11:58.047250" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Signup Page" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Sauce_demo\tests\functional\test_signup_page.robot">
+<test id="s1-t1" name="TC01 Register User" line="14">
+<kw name="Open Application" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-02T15:11:58.389419" level="INFO">Opening browser 'chrom' to base url 'https://sauce-demo.myshopify.com'.</msg>
+<msg time="2026-04-02T15:11:58.389419" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2026-04-02T15:11:58.389419" level="FAIL">ValueError: chrom is not a supported browser.</msg>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2026-04-02T15:11:58.381764" elapsed="0.007655">ValueError: chrom is not a supported browser.</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2026-04-02T15:11:58.389419" elapsed="0.000000"/>
+</kw>
+<arg>https://sauce-demo.myshopify.com</arg>
+<doc>Opens the application</doc>
+<status status="FAIL" start="2026-04-02T15:11:58.381764" elapsed="0.007655">ValueError: chrom is not a supported browser.</status>
+</kw>
+<kw name="Close Application" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-02T15:11:58.389419" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-04-02T15:11:58.389419" elapsed="0.000000"/>
+</kw>
+<doc>check if the user is able to register</doc>
+<tag>functional</tag>
+<status status="FAIL" start="2026-04-02T15:11:58.381764" elapsed="0.007655">Setup failed:
+ValueError: chrom is not a supported browser.</status>
+</test>
+<status status="FAIL" start="2026-04-02T15:11:58.047250" elapsed="0.342169"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">functional</stat>
+</tag>
+<suite>
+<stat name="Test Signup Page" id="s1" pass="0" fail="1" skip="0">Test Signup Page</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

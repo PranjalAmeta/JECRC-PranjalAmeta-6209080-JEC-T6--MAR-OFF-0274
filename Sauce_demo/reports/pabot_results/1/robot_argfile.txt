@@ -1,0 +1,16 @@
+--test Tests.Functional.Test Login Page.Checking Login
+--variable CALLER_ID:f1d35ef7afa142a5b183c20e4d06ca59
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:1
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:4
+--variable PABOTQUEUEINDEX:1
+--variable PABOTLASTLEVEL:Tests.Functional.Test Login Page
+--outputdir reports\pabot_results\1
+--output output.xml
+--log NONE
+--report NONE
+--xunit NONE
+--consolecolors off
+--consolemarkers off
+tests

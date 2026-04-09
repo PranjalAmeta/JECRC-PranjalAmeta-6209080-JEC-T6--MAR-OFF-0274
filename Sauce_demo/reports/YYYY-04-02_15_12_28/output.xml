@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-04-02T15:12:28.519570" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Signup Page" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Sauce_demo\tests\functional\test_signup_page.robot">
+<test id="s1-t1" name="TC01 Register User" line="14">
+<kw name="Open Application" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-02T15:12:28.885886" level="INFO">Opening browser 'chrome' to base url 'https://sauce-demo.myshopify.com'.</msg>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-02T15:12:28.885886" elapsed="5.159701"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-02T15:12:34.047594" elapsed="0.026089"/>
+</kw>
+<arg>https://sauce-demo.myshopify.com</arg>
+<doc>Opens the application</doc>
+<status status="PASS" start="2026-04-02T15:12:28.885886" elapsed="5.187797"/>
+</kw>
+<kw name="Sign Up To The Application" owner="sign_up_page">
+<msg time="2026-04-02T15:12:34.075686" level="FAIL">Keyword 'sign_up_page.Sign Up To The Application' expected 4 arguments, got 2.</msg>
+<arg>abc pqr abc@gmail.com</arg>
+<arg>prank</arg>
+<doc>this registers the users</doc>
+<status status="FAIL" start="2026-04-02T15:12:34.073683" elapsed="0.002003">Keyword 'sign_up_page.Sign Up To The Application' expected 4 arguments, got 2.</status>
+</kw>
+<kw name="Close Application" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-02T15:12:34.077600" elapsed="6.227015"/>
+</kw>
+<status status="PASS" start="2026-04-02T15:12:34.077192" elapsed="6.227423"/>
+</kw>
+<doc>check if the user is able to register</doc>
+<tag>functional</tag>
+<status status="FAIL" start="2026-04-02T15:12:28.885886" elapsed="11.418729">Keyword 'sign_up_page.Sign Up To The Application' expected 4 arguments, got 2.</status>
+</test>
+<status status="FAIL" start="2026-04-02T15:12:28.519570" elapsed="11.787058"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">functional</stat>
+</tag>
+<suite>
+<stat name="Test Signup Page" id="s1" pass="0" fail="1" skip="0">Test Signup Page</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

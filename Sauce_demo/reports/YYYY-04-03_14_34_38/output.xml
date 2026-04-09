@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-04-03T14:34:39.025479" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Signup Page" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Sauce_demo\tests\functional\test_signup_page.robot">
+<kw name="Load Environment" owner="common_resources" type="SETUP">
+<kw name="Load Env" owner="env_loader">
+<arg>${ENV}</arg>
+<status status="PASS" start="2026-04-03T14:34:39.428556" elapsed="0.001003"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T14:34:39.430557" level="INFO">${BASE_URL} = https://sauce-demo.myshopify.com</msg>
+<var>${BASE_URL}</var>
+<arg>BASEURL</arg>
+<status status="PASS" start="2026-04-03T14:34:39.430557" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T14:34:39.430557" level="INFO">${FIRST_NAME} = abc</msg>
+<var>${FIRST_NAME}</var>
+<arg>FIRST_NAME</arg>
+<status status="PASS" start="2026-04-03T14:34:39.430557" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T14:34:39.431558" level="INFO">${LAST_NAME} = pqr</msg>
+<var>${LAST_NAME}</var>
+<arg>LAST_NAME</arg>
+<status status="PASS" start="2026-04-03T14:34:39.431558" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T14:34:39.432553" level="INFO">${EMAIL} = abc@gmail.com</msg>
+<var>${EMAIL}</var>
+<arg>EMAIL</arg>
+<status status="PASS" start="2026-04-03T14:34:39.432553" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T14:34:39.432553" level="INFO">${PASSWORD} = prank</msg>
+<var>${PASSWORD}</var>
+<arg>PASSWORD</arg>
+<status status="PASS" start="2026-04-03T14:34:39.432553" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T14:34:39.433562" level="INFO">${BASE_URL} = https://sauce-demo.myshopify.com</msg>
+<arg>${BASE_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T14:34:39.433562" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T14:34:39.434568" level="INFO">${FIRST_NAME} = abc</msg>
+<arg>${FIRST_NAME}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T14:34:39.433562" elapsed="0.001006"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T14:34:39.434568" level="INFO">${LAST_NAME} = pqr</msg>
+<arg>${LAST_NAME}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T14:34:39.434568" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T14:34:39.435567" level="INFO">${EMAIL} = abc@gmail.com</msg>
+<arg>${EMAIL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T14:34:39.434568" elapsed="0.000999"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T14:34:39.435567" level="INFO">${PASSWORD} = prank</msg>
+<arg>${PASSWORD}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T14:34:39.435567" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-04-03T14:34:39.427561" elapsed="0.008006"/>
+</kw>
+<test id="s1-t1" name="TC01 Register User" line="15">
+<kw name="Open Application" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-03T14:34:39.437560" level="INFO">Opening browser 'chrome' to base url 'https://sauce-demo.myshopify.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-03T14:34:39.436566" elapsed="6.698497"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-03T14:34:46.135063" elapsed="0.039001"/>
+</kw>
+<doc>Opens the application</doc>
+<status status="PASS" start="2026-04-03T14:34:39.436566" elapsed="6.737498"/>
+</kw>
+<kw name="Sign Up To The Application" owner="sign_up_page">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-03T14:34:46.176275" level="INFO">Clicking element 'xpath=(//a[@id="customer_register_link"])[1]'.</msg>
+<arg>${signup_link}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-03T14:34:46.176275" elapsed="0.928671"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-03T14:34:47.105945" level="INFO">Clicking on sign up link</msg>
+<arg>Clicking on sign up link</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-03T14:34:47.104946" elapsed="0.000999"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-03T14:34:47.106944" level="INFO">Typing text 'abc' into text field '//input[@id="first_name"]'.</msg>
+<arg>${first_name_field}</arg>
+<arg>${first_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-03T14:34:47.105945" elapsed="0.113531"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-03T14:34:47.220477" level="INFO">Entering First Name</msg>
+<arg>Entering First Name</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-03T14:34:47.219476" elapsed="0.001001"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-03T14:34:47.221467" level="INFO">Typing text 'pqr' into text field '//input[@id="last_name"]'.</msg>
+<arg>${last_name_field}</arg>
+<arg>${last_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-03T14:34:47.220477" elapsed="0.107521"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-03T14:34:47.327998" level="INFO">Entering Last Name</msg>
+<arg>Entering Last Name</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-03T14:34:47.327998" elapsed="0.000996"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-03T14:34:47.328994" level="INFO">Typing text 'abc@gmail.com' into text field '//input[@id="email"]'.</msg>
+<arg>${email_field}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-03T14:34:47.328994" elapsed="0.168585"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-03T14:34:47.498576" level="INFO">Entering Email</msg>
+<arg>Entering Email</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-03T14:34:47.498576" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-03T14:34:47.499580" level="INFO">Typing text 'prank' into text field '//input[@id="password"]'.</msg>
+<arg>${pwd_field}</arg>
+<arg>${pwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-03T14:34:47.499580" elapsed="0.258100"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-03T14:34:47.758682" level="INFO">Entering Password</msg>
+<arg>Entering Password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-03T14:34:47.758682" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-03T14:34:47.759685" level="INFO">Clicking element '//input[@type="submit"]'.</msg>
+<arg>${create_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-03T14:34:47.759685" elapsed="0.413629"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-03T14:34:48.174312" level="INFO">Clicking on create</msg>
+<arg>Clicking on create</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-03T14:34:48.174312" elapsed="0.000000"/>
+</kw>
+<arg>${FIRST_NAME}</arg>
+<arg>${LAST_NAME}</arg>
+<arg>${EMAIL}</arg>
+<arg>${PASSWORD}</arg>
+<doc>this registers the users</doc>
+<status status="PASS" start="2026-04-03T14:34:46.175265" elapsed="1.999047"/>
+</kw>
+<kw name="Close Application" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-03T14:34:48.175818" elapsed="6.282482"/>
+</kw>
+<status status="PASS" start="2026-04-03T14:34:48.175312" elapsed="6.282988"/>
+</kw>
+<doc>check if the user is able to register</doc>
+<tag>functional</tag>
+<status status="PASS" start="2026-04-03T14:34:39.435567" elapsed="15.023727"/>
+</test>
+<status status="PASS" start="2026-04-03T14:34:39.027485" elapsed="15.432812"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">functional</stat>
+</tag>
+<suite>
+<stat name="Test Signup Page" id="s1" pass="1" fail="0" skip="0">Test Signup Page</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

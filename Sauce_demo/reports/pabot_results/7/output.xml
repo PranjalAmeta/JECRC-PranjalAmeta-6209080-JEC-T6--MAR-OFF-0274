@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-04-04T14:12:10.207929" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Sauce_demo\tests">
+<suite id="s1-s1" name="Test Datadriven Login" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Sauce_demo\tests\test_datadriven_login.robot">
+<test id="s1-s1-t1" name="Execl Data Driven Testing" line="32">
+<kw name="Open Application" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:12:12.932113" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-04T14:12:12.932113" elapsed="3.193035"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-04T14:12:16.125148" elapsed="0.027311"/>
+</kw>
+<arg>https://www.saucedemo.com/</arg>
+<doc>Opens the application</doc>
+<status status="PASS" start="2026-04-04T14:12:12.932113" elapsed="3.224849"/>
+</kw>
+<kw name="Login to application using excel">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:12:16.156962" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>${USERNAME}</arg>
+<arg>${user_creds}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T14:12:16.156962" elapsed="0.130581"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:12:16.287543" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>${PASSWORD}</arg>
+<arg>${pass_creds}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T14:12:16.287543" elapsed="0.121308"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:12:16.408851" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>${LOGINBUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T14:12:16.408851" elapsed="0.134430"/>
+</kw>
+<arg>user_creds=standard_user</arg>
+<arg>pass_creds=secret_sauce</arg>
+<status status="PASS" start="2026-04-04T14:12:16.156962" elapsed="0.386319"/>
+</kw>
+<kw name="Close Application" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-04T14:12:16.543281" elapsed="6.234694"/>
+</kw>
+<status status="PASS" start="2026-04-04T14:12:16.543281" elapsed="6.234694"/>
+</kw>
+<doc>This test case is to perform data driven testing from excel</doc>
+<tag>Data Driven</tag>
+<status status="PASS" start="2026-04-04T14:12:12.930100" elapsed="9.850074"/>
+</test>
+<test id="s1-s1-t2" name="Execl Data Driven Testing" line="32">
+<kw name="Open Application" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:12:22.784451" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-04T14:12:22.784451" elapsed="3.080918"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-04T14:12:25.865369" elapsed="0.044697"/>
+</kw>
+<arg>https://www.saucedemo.com/</arg>
+<doc>Opens the application</doc>
+<status status="PASS" start="2026-04-04T14:12:22.781890" elapsed="3.128176"/>
+</kw>
+<kw name="Login to application using excel">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:12:25.925565" level="INFO">Typing text 'locked_out_user' into text field 'id=user-name'.</msg>
+<arg>${USERNAME}</arg>
+<arg>${user_creds}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T14:12:25.914106" elapsed="0.327007"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:12:26.241113" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>${PASSWORD}</arg>
+<arg>${pass_creds}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T14:12:26.241113" elapsed="0.103853"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:12:26.344966" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>${LOGINBUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T14:12:26.344966" elapsed="0.079552"/>
+</kw>
+<arg>user_creds=locked_out_user</arg>
+<arg>pass_creds=secret_sauce</arg>
+<status status="PASS" start="2026-04-04T14:12:25.912080" elapsed="0.512438"/>
+</kw>
+<kw name="Close Application" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-04T14:12:26.424518" elapsed="6.266806"/>
+</kw>
+<status status="PASS" start="2026-04-04T14:12:26.424518" elapsed="6.266806"/>
+</kw>
+<doc>This test case is to perform data driven testing from excel</doc>
+<tag>Data Driven</tag>
+<status status="PASS" start="2026-04-04T14:12:22.780174" elapsed="9.911150"/>
+</test>
+<test id="s1-s1-t3" name="Execl Data Driven Testing" line="32">
+<kw name="Open Application" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:12:32.694684" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-04T14:12:32.694684" elapsed="3.841456"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-04T14:12:36.536140" elapsed="0.035667"/>
+</kw>
+<arg>https://www.saucedemo.com/</arg>
+<doc>Opens the application</doc>
+<status status="PASS" start="2026-04-04T14:12:32.694684" elapsed="3.879138"/>
+</kw>
+<kw name="Login to application using excel">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:12:36.578882" level="INFO">Typing text 'problem_user' into text field 'id=user-name'.</msg>
+<arg>${USERNAME}</arg>
+<arg>${user_creds}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T14:12:36.576870" elapsed="0.189454"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:12:36.766324" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>${PASSWORD}</arg>
+<arg>${pass_creds}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T14:12:36.766324" elapsed="0.150409"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:12:36.916733" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>${LOGINBUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T14:12:36.916733" elapsed="0.177055"/>
+</kw>
+<arg>user_creds=problem_user</arg>
+<arg>pass_creds=secret_sauce</arg>
+<status status="PASS" start="2026-04-04T14:12:36.573822" elapsed="0.519966"/>
+</kw>
+<kw name="Close Application" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-04T14:12:37.096443" elapsed="6.211419"/>
+</kw>
+<status status="PASS" start="2026-04-04T14:12:37.093788" elapsed="6.214074"/>
+</kw>
+<doc>This test case is to perform data driven testing from excel</doc>
+<tag>Data Driven</tag>
+<status status="PASS" start="2026-04-04T14:12:32.691324" elapsed="10.616538"/>
+</test>
+<test id="s1-s1-t4" name="Execl Data Driven Testing" line="32">
+<kw name="Open Application" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:12:43.313877" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-04T14:12:43.312958" elapsed="19.331786"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-04T14:13:02.644744" elapsed="0.065055"/>
+</kw>
+<arg>https://www.saucedemo.com/</arg>
+<doc>Opens the application</doc>
+<status status="PASS" start="2026-04-04T14:12:43.312958" elapsed="19.396841"/>
+</kw>
+<kw name="Login to application using excel">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:13:02.714410" level="INFO">Typing text 'performance_glitch_user' into text field 'id=user-name'.</msg>
+<arg>${USERNAME}</arg>
+<arg>${user_creds}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T14:13:02.714410" elapsed="0.288694"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:13:03.003104" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>${PASSWORD}</arg>
+<arg>${pass_creds}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T14:13:03.003104" elapsed="0.111746"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:13:03.118273" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>${LOGINBUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T14:13:03.118273" elapsed="5.246088"/>
+</kw>
+<arg>user_creds=performance_glitch_user</arg>
+<arg>pass_creds=secret_sauce</arg>
+<status status="PASS" start="2026-04-04T14:13:02.712397" elapsed="5.651964"/>
+</kw>
+<kw name="Close Application" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-04T14:13:08.364361" elapsed="6.241724"/>
+</kw>
+<status status="PASS" start="2026-04-04T14:13:08.364361" elapsed="6.241724"/>
+</kw>
+<doc>This test case is to perform data driven testing from excel</doc>
+<tag>Data Driven</tag>
+<status status="PASS" start="2026-04-04T14:12:43.307862" elapsed="31.298223"/>
+</test>
+<test id="s1-s1-t5" name="Execl Data Driven Testing" line="32">
+<kw name="Open Application" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:13:14.606085" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-04T14:13:14.606085" elapsed="3.967144"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-04T14:13:18.573229" elapsed="0.037267"/>
+</kw>
+<arg>https://www.saucedemo.com/</arg>
+<doc>Opens the application</doc>
+<status status="PASS" start="2026-04-04T14:13:14.606085" elapsed="4.004411"/>
+</kw>
+<kw name="Login to application using excel">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:13:18.613608" level="INFO">Typing text 'error_user' into text field 'id=user-name'.</msg>
+<arg>${USERNAME}</arg>
+<arg>${user_creds}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T14:13:18.610496" elapsed="0.196574"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:13:18.807070" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>${PASSWORD}</arg>
+<arg>${pass_creds}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T14:13:18.807070" elapsed="0.145955"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:13:18.953025" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>${LOGINBUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T14:13:18.953025" elapsed="0.149669"/>
+</kw>
+<arg>user_creds=error_user</arg>
+<arg>pass_creds=secret_sauce</arg>
+<status status="PASS" start="2026-04-04T14:13:18.610496" elapsed="0.492198"/>
+</kw>
+<kw name="Close Application" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-04T14:13:19.107216" elapsed="6.297214"/>
+</kw>
+<status status="PASS" start="2026-04-04T14:13:19.102694" elapsed="6.301736"/>
+</kw>
+<doc>This test case is to perform data driven testing from excel</doc>
+<tag>Data Driven</tag>
+<status status="PASS" start="2026-04-04T14:13:14.606085" elapsed="10.800671"/>
+</test>
+<test id="s1-s1-t6" name="Execl Data Driven Testing" line="32">
+<kw name="Open Application" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:13:25.407776" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-04T14:13:25.407776" elapsed="3.084818"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-04T14:13:28.492594" elapsed="0.034923"/>
+</kw>
+<arg>https://www.saucedemo.com/</arg>
+<doc>Opens the application</doc>
+<status status="PASS" start="2026-04-04T14:13:25.407776" elapsed="3.119741"/>
+</kw>
+<kw name="Login to application using excel">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:13:28.527517" level="INFO">Typing text 'visual_user' into text field 'id=user-name'.</msg>
+<arg>${USERNAME}</arg>
+<arg>${user_creds}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T14:13:28.527517" elapsed="0.185962"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:13:28.713479" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>${PASSWORD}</arg>
+<arg>${pass_creds}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T14:13:28.713479" elapsed="0.139736"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:13:28.853215" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>${LOGINBUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T14:13:28.853215" elapsed="0.154471"/>
+</kw>
+<arg>user_creds=visual_user</arg>
+<arg>pass_creds=secret_sauce</arg>
+<status status="PASS" start="2026-04-04T14:13:28.527517" elapsed="0.480169"/>
+</kw>
+<kw name="Close Application" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-04T14:13:29.010443" elapsed="6.267241"/>
+</kw>
+<status status="PASS" start="2026-04-04T14:13:29.010443" elapsed="6.268567"/>
+</kw>
+<doc>This test case is to perform data driven testing from excel</doc>
+<tag>Data Driven</tag>
+<status status="PASS" start="2026-04-04T14:13:25.406756" elapsed="9.872254"/>
+</test>
+<status status="PASS" start="2026-04-04T14:12:10.274363" elapsed="85.004647"/>
+</suite>
+<status status="PASS" start="2026-04-04T14:12:10.207929" elapsed="85.071081"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="6" fail="0" skip="0">Data Driven</stat>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="6" fail="0" skip="0">Tests</stat>
+<stat name="Test Datadriven Login" id="s1-s1" pass="6" fail="0" skip="0">Tests.Test Datadriven Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-04-04T14:12:22.780174" level="WARN">Multiple tests with name 'Execl Data Driven Testing' executed in suite 'Tests.Test Datadriven Login'.</msg>
+<msg time="2026-04-04T14:12:32.691324" level="WARN">Multiple tests with name 'Execl Data Driven Testing' executed in suite 'Tests.Test Datadriven Login'.</msg>
+<msg time="2026-04-04T14:12:43.307862" level="WARN">Multiple tests with name 'Execl Data Driven Testing' executed in suite 'Tests.Test Datadriven Login'.</msg>
+<msg time="2026-04-04T14:13:14.606085" level="WARN">Multiple tests with name 'Execl Data Driven Testing' executed in suite 'Tests.Test Datadriven Login'.</msg>
+<msg time="2026-04-04T14:13:25.406756" level="WARN">Multiple tests with name 'Execl Data Driven Testing' executed in suite 'Tests.Test Datadriven Login'.</msg>
+</errors>
+</robot>

@@ -11,7 +11,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from time import sleep
 
-from selenium.webdriver.support.expected_conditions import element_to_be_clickable
 
 # driver=webdriver.Chrome()
 # driver.get('https://the-internet.herokuapp.com/drag_and_drop')
@@ -73,7 +72,9 @@ assert "Dropped!"==tar_el.text,"not found"
 
 
 '''
-scroll_by_amount(x,y).perform():- in the form of axes
+scroll_to :- will go to a exact point like (x,y)                                 (cant give negative values)
+scroll_by :- will go to req position from the current psition so it is relative   (can give negative values)
+scroll_by_amount(x,y).perform():- in the form of axes  
 scroll_from_origin(origin,x,y)
 '''
 
@@ -107,7 +108,7 @@ CONTROL is used as ctrl+a,c,v
 # driver.get("https://amazon.com")
 # action.key_down(Keys.CONTROL).send_keys('a').perform()
 # sleep(2)
-# action.key_up(Keys.CONTROL).perform()   # erlease the ctrl key
+# action.key_up(Keys.CONTROL).perform()   # release the ctrl key
 # sleep(2)
 # action.key_down(Keys.CONTROL).send_keys('c').perform()
 # sleep(2)

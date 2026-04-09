@@ -1,0 +1,17 @@
+--suite Tests.Test Datadriven Login
+--variable DYNAMICTESTS:Tests.Test Datadriven Login.Execl Data Driven Testing
+--variable CALLER_ID:4482983553924a9b8ccade7574787ae7
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:2
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:4
+--variable PABOTQUEUEINDEX:6
+--variable PABOTLASTLEVEL:Tests.Test Datadriven Login.PABOT_noend
+--outputdir reports\pabot_results\6
+--output output.xml
+--log NONE
+--report NONE
+--xunit NONE
+--consolecolors off
+--consolemarkers off
+tests

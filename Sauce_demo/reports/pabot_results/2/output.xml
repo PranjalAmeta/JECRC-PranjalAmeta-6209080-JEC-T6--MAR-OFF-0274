@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-04-04T14:11:52.565146" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Sauce_demo\tests">
+<suite id="s1-s1" name="Functional" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Sauce_demo\tests\functional">
+<suite id="s1-s1-s1" name="Test Signup Page" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Sauce_demo\tests\functional\test_signup_page.robot">
+<kw name="Load Environment" type="SETUP">
+<msg time="2026-04-04T14:11:53.380527" level="FAIL">No keyword with name 'Load Environment' found. Did you try using keyword 'env_loader.Load Env' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" start="2026-04-04T14:11:53.380527" elapsed="0.000000">No keyword with name 'Load Environment' found. Did you try using keyword 'env_loader.Load Env' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<test id="s1-s1-s1-t1" name="TC01 Register User" line="22">
+<doc>check if the user is able to register</doc>
+<tag>functional</tag>
+<status status="FAIL" start="2026-04-04T14:11:53.380527" elapsed="0.000000">Parent suite setup failed:
+No keyword with name 'Load Environment' found. Did you try using keyword 'env_loader.Load Env' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<status status="FAIL" start="2026-04-04T14:11:52.631180" elapsed="0.749347">Suite setup failed:
+No keyword with name 'Load Environment' found. Did you try using keyword 'env_loader.Load Env' and forgot to use enough whitespace between keyword and arguments?</status>
+</suite>
+<status status="FAIL" start="2026-04-04T14:11:52.631180" elapsed="0.749347"/>
+</suite>
+<status status="FAIL" start="2026-04-04T14:11:52.565146" elapsed="0.815381"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">functional</stat>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
+<stat name="Functional" id="s1-s1" pass="0" fail="1" skip="0">Tests.Functional</stat>
+<stat name="Test Signup Page" id="s1-s1-s1" pass="0" fail="1" skip="0">Tests.Functional.Test Signup Page</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,29 @@
+2026-04-04 14:11:56.191651 ==============================================================================
+2026-04-04 14:11:56.226663 Tests
+2026-04-04 14:11:56.226663 ==============================================================================
+2026-04-04 14:11:57.245945 Tests.Test Datadriven Login
+2026-04-04 14:11:57.316237 ==============================================================================
+2026-04-04 14:12:09.866270 Execl Data Driven Testing :: This test case is to perform data dri... | PASS |
+2026-04-04 14:12:09.905844 ------------------------------------------------------------------------------
+2026-04-04 14:12:09.905844 [ WARN ] Multiple tests with name 'Execl Data Driven Testing' executed in suite 'Tests.Test Datadriven Login'.
+2026-04-04 14:12:20.750282 Execl Data Driven Testing :: This test case is to perform data dri... | PASS |
+2026-04-04 14:12:20.752282 ------------------------------------------------------------------------------
+2026-04-04 14:12:20.752282 [ WARN ] Multiple tests with name 'Execl Data Driven Testing' executed in suite 'Tests.Test Datadriven Login'.
+2026-04-04 14:12:32.208885 Execl Data Driven Testing :: This test case is to perform data dri... | PASS |
+2026-04-04 14:12:32.211214 ------------------------------------------------------------------------------
+2026-04-04 14:12:32.211214 [ WARN ] Multiple tests with name 'Execl Data Driven Testing' executed in suite 'Tests.Test Datadriven Login'.
+2026-04-04 14:12:47.737338 Execl Data Driven Testing :: This test case is to perform data dri... | PASS |
+2026-04-04 14:12:47.781531 ------------------------------------------------------------------------------
+2026-04-04 14:12:47.781531 [ WARN ] Multiple tests with name 'Execl Data Driven Testing' executed in suite 'Tests.Test Datadriven Login'.
+2026-04-04 14:12:58.285796 Execl Data Driven Testing :: This test case is to perform data dri... | PASS |
+2026-04-04 14:12:58.293897 ------------------------------------------------------------------------------
+2026-04-04 14:12:58.293897 [ WARN ] Multiple tests with name 'Execl Data Driven Testing' executed in suite 'Tests.Test Datadriven Login'.
+2026-04-04 14:13:09.555229 Execl Data Driven Testing :: This test case is to perform data dri... | PASS |
+2026-04-04 14:13:09.570933 ------------------------------------------------------------------------------
+2026-04-04 14:13:09.570933 Tests.Test Datadriven Login                                           | PASS |
+2026-04-04 14:13:09.570933 6 tests, 6 passed, 0 failed
+2026-04-04 14:13:09.570933 ==============================================================================
+2026-04-04 14:13:09.570933 Tests                                                                 | PASS |
+2026-04-04 14:13:09.570933 6 tests, 6 passed, 0 failed
+2026-04-04 14:13:09.570933 ==============================================================================
+2026-04-04 14:13:09.570933 Output:  C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&Robot\Projects\Sauce_demo\reports\pabot_results\4\output.xml

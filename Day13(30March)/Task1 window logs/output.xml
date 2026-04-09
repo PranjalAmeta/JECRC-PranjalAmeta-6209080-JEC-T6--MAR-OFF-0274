@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-03-30T10:58:44.651981" rpa="false" schemaversion="5">
+<suite id="s1" name="Task1" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Day13(30March)\Task1.robot">
+<test id="s1-t1" name="Handling Window" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-30T10:58:44.996184" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-30T10:58:44.995173" elapsed="6.721815"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-30T10:58:51.717979" elapsed="0.045565"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T10:58:53.773635" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T10:58:51.764539" elapsed="2.009096"/>
+</kw>
+<kw name="Log Title" owner="SeleniumLibrary">
+<msg time="2026-03-30T10:58:53.784635" level="INFO">Automation Testing Practice</msg>
+<doc>Logs and returns the title of the current page.</doc>
+<status status="PASS" start="2026-03-30T10:58:53.774640" elapsed="0.009995"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T10:58:53.785633" level="INFO">Clicking element 'xpath=//button[@id='PopUp']'.</msg>
+<arg>xpath=//button[@id='PopUp']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T10:58:53.785633" elapsed="0.356888"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T10:58:56.155738" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T10:58:54.142521" elapsed="2.013217"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2026-03-30T10:58:56.156736" elapsed="0.024583"/>
+</kw>
+<kw name="Get Window Handles" owner="SeleniumLibrary">
+<msg time="2026-03-30T10:58:56.188316" level="INFO">@{windows} = [ 2FA80C4EBF968D8C710F0E068D568E46 | 59410572E10B0EABDBCCE874F35C1D87 | B051925B42CC5D401CFB60FF0C722951 ]</msg>
+<var>@{windows}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<status status="PASS" start="2026-03-30T10:58:56.182320" elapsed="0.005996"/>
+</kw>
+<kw name="Get Window Titles" owner="SeleniumLibrary">
+<msg time="2026-03-30T10:58:56.337982" level="INFO">Altogether 3 items.
+1: Automation Testing Practice
+2: Fast and reliable end-to-end testing for modern web apps | Playwright
+3: Selenium</msg>
+<msg time="2026-03-30T10:58:56.337982" level="INFO">@{new_title} = [ Automation Testing Practice | Fast and reliable end-to-end testing for modern web apps | Playwright | Selenium ]</msg>
+<var>@{new_title}</var>
+<doc>Returns and logs titles of all windows of the selected browser.</doc>
+<status status="PASS" start="2026-03-30T10:58:56.189308" elapsed="0.148674"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${new_title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-30T10:58:56.338970" elapsed="0.001011"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>${windows}[0]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2026-03-30T10:58:56.339981" elapsed="0.018993"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-03-30T10:58:56.387927" level="INFO">Current page contains text 'Automation Testing Practice'.</msg>
+<arg>Automation Testing Practice</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-03-30T10:58:56.359972" elapsed="0.028955"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T10:58:58.394847" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T10:58:56.388927" elapsed="2.005920"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-30T10:58:58.395837" elapsed="2.248927"/>
+</kw>
+<status status="PASS" start="2026-03-30T10:58:44.994190" elapsed="15.651573"/>
+</test>
+<status status="PASS" start="2026-03-30T10:58:44.654980" elapsed="15.991783"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Task1" id="s1" pass="1" fail="0" skip="0">Task1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

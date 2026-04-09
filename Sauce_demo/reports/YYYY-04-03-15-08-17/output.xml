@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-04-03T15:08:18.418255" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Cart" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Sauce_demo\tests\functional\test_cart.robot">
+<kw name="Load Environment" owner="common_resources" type="SETUP">
+<kw name="Load Env" owner="env_loader">
+<arg>${ENV}</arg>
+<status status="PASS" start="2026-04-03T15:08:18.859152" elapsed="0.001030"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T15:08:18.861181" level="INFO">${BASE_URL} = https://sauce-demo.myshopify.com</msg>
+<var>${BASE_URL}</var>
+<arg>BASEURL</arg>
+<status status="PASS" start="2026-04-03T15:08:18.861181" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T15:08:18.861181" level="INFO">${FIRST_NAME} = abc</msg>
+<var>${FIRST_NAME}</var>
+<arg>FIRST_NAME</arg>
+<status status="PASS" start="2026-04-03T15:08:18.861181" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T15:08:18.862181" level="INFO">${LAST_NAME} = pqr</msg>
+<var>${LAST_NAME}</var>
+<arg>LAST_NAME</arg>
+<status status="PASS" start="2026-04-03T15:08:18.861181" elapsed="0.001000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T15:08:18.862181" level="INFO">${EMAIL} = abc@gmail.com</msg>
+<var>${EMAIL}</var>
+<arg>EMAIL</arg>
+<status status="PASS" start="2026-04-03T15:08:18.862181" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T15:08:18.862181" level="INFO">${PASSWORD} = prank</msg>
+<var>${PASSWORD}</var>
+<arg>PASSWORD</arg>
+<status status="PASS" start="2026-04-03T15:08:18.862181" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T15:08:18.863172" level="INFO">${PRODUCT} = Shirts</msg>
+<var>${PRODUCT}</var>
+<arg>PRODUCT</arg>
+<status status="PASS" start="2026-04-03T15:08:18.862181" elapsed="0.000991"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T15:08:18.863172" level="INFO">${BASE_URL} = https://sauce-demo.myshopify.com</msg>
+<arg>${BASE_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T15:08:18.863172" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T15:08:18.864166" level="INFO">${FIRST_NAME} = abc</msg>
+<arg>${FIRST_NAME}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T15:08:18.864166" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T15:08:18.865163" level="INFO">${LAST_NAME} = pqr</msg>
+<arg>${LAST_NAME}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T15:08:18.864166" elapsed="0.000997"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T15:08:18.866165" level="INFO">${EMAIL} = abc@gmail.com</msg>
+<arg>${EMAIL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T15:08:18.865163" elapsed="0.001002"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T15:08:18.867159" level="INFO">${PASSWORD} = prank</msg>
+<arg>${PASSWORD}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T15:08:18.866165" elapsed="0.000994"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T15:08:18.867159" level="INFO">${PRODUCT} = Shirts</msg>
+<arg>${PRODUCT}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T15:08:18.867159" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-04-03T15:08:18.858142" elapsed="0.010025"/>
+</kw>
+<test id="s1-t1" name="TC01 Searching Product" line="10">
+<kw name="Open Application" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-03T15:08:18.870172" level="INFO">Opening browser 'chrome' to base url 'https://sauce-demo.myshopify.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-03T15:08:18.869167" elapsed="4.924340"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-03T15:08:23.794505" elapsed="0.032029"/>
+</kw>
+<doc>Opens the application</doc>
+<status status="PASS" start="2026-04-03T15:08:18.869167" elapsed="4.958342"/>
+</kw>
+<kw name="Search For a Product" owner="prod_catalog_page">
+<msg time="2026-04-03T15:08:23.828509" level="FAIL">Keyword 'prod_catalog_page.Search For a Product' expected 0 arguments, got 1.</msg>
+<arg>${PRODUCT}</arg>
+<doc>Searching for a product</doc>
+<status status="FAIL" start="2026-04-03T15:08:23.827509" elapsed="0.001000">Keyword 'prod_catalog_page.Search For a Product' expected 0 arguments, got 1.</status>
+</kw>
+<doc>searching for product</doc>
+<tag>functional</tag>
+<status status="FAIL" start="2026-04-03T15:08:18.868167" elapsed="4.960342">Keyword 'prod_catalog_page.Search For a Product' expected 0 arguments, got 1.</status>
+</test>
+<status status="FAIL" start="2026-04-03T15:08:18.422263" elapsed="5.408247"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">functional</stat>
+</tag>
+<suite>
+<stat name="Test Cart" id="s1" pass="0" fail="1" skip="0">Test Cart</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-04-03T15:08:18.405264" level="ERROR">Error in file 'C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Sauce_demo\tests\functional\test_cart.robot' on line 7: Setting 'Test Setup' is allowed only once. Only the first value is used.</msg>
+</errors>
+</robot>

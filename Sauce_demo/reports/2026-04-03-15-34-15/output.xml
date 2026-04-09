@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-04-03T15:34:16.114635" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Cart" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Sauce_demo\tests\functional\test_cart.robot">
+<kw name="Load Environment" owner="common_resources" type="SETUP">
+<kw name="Load Env" owner="env_loader">
+<arg>${ENV}</arg>
+<status status="PASS" start="2026-04-03T15:34:16.499500" elapsed="0.002002"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T15:34:16.501502" level="INFO">${BASE_URL} = https://sauce-demo.myshopify.com</msg>
+<var>${BASE_URL}</var>
+<arg>BASEURL</arg>
+<status status="PASS" start="2026-04-03T15:34:16.501502" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T15:34:16.502502" level="INFO">${FIRST_NAME} = abc</msg>
+<var>${FIRST_NAME}</var>
+<arg>FIRST_NAME</arg>
+<status status="PASS" start="2026-04-03T15:34:16.502502" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T15:34:16.502502" level="INFO">${LAST_NAME} = pqr</msg>
+<var>${LAST_NAME}</var>
+<arg>LAST_NAME</arg>
+<status status="PASS" start="2026-04-03T15:34:16.502502" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T15:34:16.502502" level="INFO">${EMAIL} = abc@gmail.com</msg>
+<var>${EMAIL}</var>
+<arg>EMAIL</arg>
+<status status="PASS" start="2026-04-03T15:34:16.502502" elapsed="0.001000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T15:34:16.503502" level="INFO">${PASSWORD} = prank</msg>
+<var>${PASSWORD}</var>
+<arg>PASSWORD</arg>
+<status status="PASS" start="2026-04-03T15:34:16.503502" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T15:34:16.503502" level="INFO">${PROD} = Shirts</msg>
+<var>${PROD}</var>
+<arg>PRODUCT</arg>
+<status status="PASS" start="2026-04-03T15:34:16.503502" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T15:34:16.504502" level="INFO">${BASE_URL} = https://sauce-demo.myshopify.com</msg>
+<arg>${BASE_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T15:34:16.503502" elapsed="0.001000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T15:34:16.504502" level="INFO">${FIRST_NAME} = abc</msg>
+<arg>${FIRST_NAME}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T15:34:16.504502" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T15:34:16.505502" level="INFO">${LAST_NAME} = pqr</msg>
+<arg>${LAST_NAME}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T15:34:16.505502" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T15:34:16.506503" level="INFO">${EMAIL} = abc@gmail.com</msg>
+<arg>${EMAIL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T15:34:16.505502" elapsed="0.001001"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T15:34:16.506503" level="INFO">${PASSWORD} = prank</msg>
+<arg>${PASSWORD}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T15:34:16.506503" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T15:34:16.507501" level="INFO">${PROD} = Shirts</msg>
+<arg>${PROD}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T15:34:16.507501" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-04-03T15:34:16.498505" elapsed="0.008996"/>
+</kw>
+<test id="s1-t1" name="TC01 Searching Product" line="10">
+<kw name="Open Application" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-03T15:34:16.509013" level="INFO">Opening browser 'chrome' to base url 'https://sauce-demo.myshopify.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-03T15:34:16.509013" elapsed="4.255750"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-03T15:34:20.764763" elapsed="0.028004"/>
+</kw>
+<doc>Opens the application</doc>
+<status status="PASS" start="2026-04-03T15:34:16.508502" elapsed="4.284265"/>
+</kw>
+<kw name="Search For a Product" owner="prod_catalog_page">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-03T15:34:30.805973" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-03T15:34:20.793764" elapsed="10.012209"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-03T15:34:30.807974" level="FAIL">Variable '${srch_prod_click}' not found.</msg>
+<arg>${srch_prod_click}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-04-03T15:34:30.805973" elapsed="0.002001">Variable '${srch_prod_click}' not found.</status>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Clicking in to search field</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-04-03T15:34:30.807974" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${srch_inp}</arg>
+<arg>${Input_Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-03T15:34:30.807974" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Entering the input text</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-04-03T15:34:30.807974" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${srch_sbmt}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-03T15:34:30.808979" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Clicking the search button</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-04-03T15:34:30.808979" elapsed="0.000000"/>
+</kw>
+<arg>${PROD}</arg>
+<doc>Searching for a product</doc>
+<status status="FAIL" start="2026-04-03T15:34:20.793764" elapsed="10.015215">Variable '${srch_prod_click}' not found.</status>
+</kw>
+<kw name="Close Application" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-03T15:34:30.809977" elapsed="6.356793"/>
+</kw>
+<status status="PASS" start="2026-04-03T15:34:30.809977" elapsed="6.356793"/>
+</kw>
+<doc>searching for product</doc>
+<tag>functional</tag>
+<status status="FAIL" start="2026-04-03T15:34:16.507501" elapsed="20.659269">Variable '${srch_prod_click}' not found.</status>
+</test>
+<status status="FAIL" start="2026-04-03T15:34:16.116644" elapsed="21.051111"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">functional</stat>
+</tag>
+<suite>
+<stat name="Test Cart" id="s1" pass="0" fail="1" skip="0">Test Cart</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

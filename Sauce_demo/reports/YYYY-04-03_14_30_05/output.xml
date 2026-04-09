@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-04-03T14:30:06.379020" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Signup Page" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Sauce_demo\tests\functional\test_signup_page.robot">
+<kw name="Load Environment" owner="common_resources" type="SETUP">
+<kw name="Load Env" owner="env_loader">
+<arg>${ENV}</arg>
+<status status="PASS" start="2026-04-03T14:30:07.053527" elapsed="0.001002"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T14:30:07.055528" level="INFO">${BASE_URL} = https://sauce-demo.myshopify.com</msg>
+<var>${BASE_URL}</var>
+<arg>BASEURL</arg>
+<status status="PASS" start="2026-04-03T14:30:07.055528" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T14:30:07.055528" level="INFO">${FIRST_NAME} = abc</msg>
+<var>${FIRST_NAME}</var>
+<arg>FIRST_NAME</arg>
+<status status="PASS" start="2026-04-03T14:30:07.055528" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T14:30:07.056529" level="INFO">${LAST_NAME} = pqr</msg>
+<var>${LAST_NAME}</var>
+<arg>LAST_NAME</arg>
+<status status="PASS" start="2026-04-03T14:30:07.056529" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T14:30:07.057530" level="INFO">${EMAIL} = abc@gmail.com</msg>
+<var>${EMAIL}</var>
+<arg>EMAIL</arg>
+<status status="PASS" start="2026-04-03T14:30:07.056529" elapsed="0.001001"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-03T14:30:07.057530" level="INFO">${PASSWORD} = prank</msg>
+<var>${PASSWORD}</var>
+<arg>PASSWORD</arg>
+<status status="PASS" start="2026-04-03T14:30:07.057530" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T14:30:07.058542" level="INFO">${BASE_URL} = https://sauce-demo.myshopify.com</msg>
+<arg>${BASE_URL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T14:30:07.057530" elapsed="0.001012"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T14:30:07.059548" level="INFO">${FIRST_NAME} = abc</msg>
+<arg>${FIRST_NAME}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T14:30:07.058542" elapsed="0.001006"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T14:30:07.059548" level="INFO">${LAST_NAME} = pqr</msg>
+<arg>${LAST_NAME}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T14:30:07.059548" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T14:30:07.060567" level="INFO">${EMAIL} = abc@gmail.com</msg>
+<arg>${EMAIL}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T14:30:07.060567" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-03T14:30:07.061558" level="INFO">${PASSWORD} = prank</msg>
+<arg>${PASSWORD}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-03T14:30:07.061558" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-04-03T14:30:07.052530" elapsed="0.009028"/>
+</kw>
+<test id="s1-t1" name="TC01 Register User" line="15">
+<kw name="Open Application" owner="common_resources" type="SETUP">
+<msg time="2026-04-03T14:30:07.062573" level="FAIL">Keyword 'common_resources.Open Application' expected 0 arguments, got 1.</msg>
+<arg>https://sauce-demo.myshopify.com</arg>
+<doc>Opens the application</doc>
+<status status="FAIL" start="2026-04-03T14:30:07.062573" elapsed="0.000984">Keyword 'common_resources.Open Application' expected 0 arguments, got 1.</status>
+</kw>
+<kw name="Close Application" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-03T14:30:07.064535" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-04-03T14:30:07.063557" elapsed="0.000978"/>
+</kw>
+<doc>check if the user is able to register</doc>
+<tag>functional</tag>
+<status status="FAIL" start="2026-04-03T14:30:07.061558" elapsed="0.002977">Setup failed:
+Keyword 'common_resources.Open Application' expected 0 arguments, got 1.</status>
+</test>
+<status status="FAIL" start="2026-04-03T14:30:06.383008" elapsed="0.683514"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">functional</stat>
+</tag>
+<suite>
+<stat name="Test Signup Page" id="s1" pass="0" fail="1" skip="0">Test Signup Page</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

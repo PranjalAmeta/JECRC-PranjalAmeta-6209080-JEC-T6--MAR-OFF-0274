@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-04-02T12:08:42.273901" rpa="false" schemaversion="5">
+<suite id="s1" name="Args" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Day14(2April)\args.robot">
+<test id="s1-t1" name="Login" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-02T12:08:42.607899" level="INFO">Opening browser 'chrome' to base url 'https://sauce-demo.myshopify.com/account/login'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-02T12:08:42.607899" elapsed="41.212972"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-02T12:09:23.821866" elapsed="0.034161"/>
+</kw>
+<kw name="Login Success">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-02T12:09:23.856027" level="INFO">Typing text 'iamironman' into text field 'id=customer_email'.</msg>
+<arg>id=customer_email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-02T12:09:23.856027" elapsed="0.130188"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-02T12:09:23.986215" level="INFO">Typing text 'abc@gmail.com' into text field 'id=customer_password'.</msg>
+<arg>id=customer_password</arg>
+<arg>${pwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-02T12:09:23.986215" elapsed="0.076205"/>
+</kw>
+<arg>pwd=abc@gmail.com</arg>
+<arg>email=iamironman</arg>
+<status status="PASS" start="2026-04-02T12:09:23.856027" elapsed="0.206393"/>
+</kw>
+<status status="PASS" start="2026-04-02T12:08:42.607899" elapsed="41.454521"/>
+</test>
+<status status="PASS" start="2026-04-02T12:08:42.273901" elapsed="41.790696"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Args" id="s1" pass="1" fail="0" skip="0">Args</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

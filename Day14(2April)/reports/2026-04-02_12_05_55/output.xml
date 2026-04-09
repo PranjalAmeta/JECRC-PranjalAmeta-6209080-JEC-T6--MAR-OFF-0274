@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-04-02T12:05:55.847352" rpa="false" schemaversion="5">
+<suite id="s1" name="Args" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Day14(2April)\args.robot">
+<test id="s1-t1" name="Login" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-02T12:05:56.212958" level="INFO">Opening browser 'chrome' to base url 'https://sauce-demo.myshopify.com/account/login'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-02T12:05:56.212958" elapsed="5.843214"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-02T12:06:02.057169" elapsed="0.041785"/>
+</kw>
+<kw name="Login Success">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-02T12:06:02.100966" level="INFO">Typing text 'abc@gmail.com' into text field 'id=customer_email'.</msg>
+<arg>id=customer_email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-02T12:06:02.100966" elapsed="0.170033"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-02T12:06:02.270999" level="INFO">Typing text 'iamironman' into text field 'id=customer_password'.</msg>
+<arg>id=customer_password</arg>
+<arg>${pwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-02T12:06:02.270999" elapsed="0.084165"/>
+</kw>
+<arg>abc@gmail.com</arg>
+<status status="PASS" start="2026-04-02T12:06:02.098954" elapsed="0.256210"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-02T12:06:04.360176" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-02T12:06:02.355164" elapsed="2.005012"/>
+</kw>
+<status status="PASS" start="2026-04-02T12:05:56.212958" elapsed="8.147218"/>
+</test>
+<status status="PASS" start="2026-04-02T12:05:55.863398" elapsed="8.498808"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Args" id="s1" pass="1" fail="0" skip="0">Args</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

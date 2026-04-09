@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-03-30T13:10:44.053754" rpa="false" schemaversion="5">
+<suite id="s1" name="Task2" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Day13(30March)\Task2.robot">
+<test id="s1-t1" name="Simple Alert" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-30T13:10:44.422731" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-30T13:10:44.422216" elapsed="7.698747"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-30T13:10:52.121951" elapsed="0.030001"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T13:10:52.153968" level="INFO">Clicking element 'id=alertBtn'.</msg>
+<arg>id=alertBtn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T13:10:52.152962" elapsed="0.120554"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2026-03-30T13:10:52.274023" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2026-03-30T13:10:52.274023" elapsed="0.009008"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-30T13:10:52.284049" elapsed="2.205813"/>
+</kw>
+<status status="PASS" start="2026-03-30T13:10:44.420219" elapsed="10.070641"/>
+</test>
+<test id="s1-t2" name="Confirmation Alert" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-30T13:10:54.491871" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-30T13:10:54.491871" elapsed="6.057988"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-30T13:11:00.549859" elapsed="0.059020"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T13:11:00.609874" level="INFO">Clicking element 'id=confirmBtn'.</msg>
+<arg>id=confirmBtn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T13:11:00.609874" elapsed="0.117904"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2026-03-30T13:11:00.729778" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>action=DISMISS</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2026-03-30T13:11:00.728778" elapsed="0.010082"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T13:11:02.742575" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T13:11:00.738860" elapsed="2.003715"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T13:11:02.773578" level="INFO">${output} = You pressed Cancel!</msg>
+<var>${output}</var>
+<arg>//p[@id='demo']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T13:11:02.743547" elapsed="0.030031"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-03-30T13:11:02.792578" level="INFO">Current page contains text 'You pressed Cancel'.</msg>
+<arg>You pressed Cancel</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-03-30T13:11:02.773578" elapsed="0.019000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${output}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-30T13:11:02.793580" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-30T13:11:02.794592" elapsed="2.161195"/>
+</kw>
+<status status="PASS" start="2026-03-30T13:10:54.490860" elapsed="10.465926"/>
+</test>
+<test id="s1-t3" name="Prompt Alert" line="26">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-30T13:11:04.958797" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-30T13:11:04.957786" elapsed="6.791929"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-30T13:11:11.750713" elapsed="0.038528"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T13:11:11.790243" level="INFO">Clicking element 'id=promptBtn'.</msg>
+<arg>id=promptBtn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T13:11:11.790243" elapsed="0.113580"/>
+</kw>
+<kw name="Input Text Into Alert" owner="SeleniumLibrary">
+<arg>Level</arg>
+<doc>Types the given ``text`` into an input field in an alert.</doc>
+<status status="PASS" start="2026-03-30T13:11:11.904819" elapsed="0.015012"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T13:11:13.932347" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T13:11:11.919831" elapsed="2.012516"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T13:11:13.961978" level="INFO">${output} = Hello Level! How are you today?</msg>
+<var>${output}</var>
+<arg>//p[@id='demo']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T13:11:13.933333" elapsed="0.028645"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-03-30T13:11:13.981503" level="INFO">Current page contains text 'Hello Level! How are you today?'.</msg>
+<arg>Hello Level! How are you today?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-03-30T13:11:13.961978" elapsed="0.019525"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${output}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-30T13:11:13.982503" elapsed="0.000996"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-30T13:11:13.983499" elapsed="2.164264"/>
+</kw>
+<status status="PASS" start="2026-03-30T13:11:04.957786" elapsed="11.190955"/>
+</test>
+<status status="PASS" start="2026-03-30T13:10:44.056756" elapsed="32.092996"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Task2" id="s1" pass="3" fail="0" skip="0">Task2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

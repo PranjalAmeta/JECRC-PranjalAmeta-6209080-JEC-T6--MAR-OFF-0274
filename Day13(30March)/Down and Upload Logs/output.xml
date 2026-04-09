@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-03-30T15:09:31.767739" rpa="false" schemaversion="5">
+<suite id="s1" name="Down Upload" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Day13(30March)\Down_Upload.robot">
+<test id="s1-t1" name="Upload" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:09:32.117158" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-30T15:09:32.117158" elapsed="6.914293"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-30T15:09:39.031451" elapsed="0.046573"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:09:39.078024" level="INFO">Clicking element '//a[@href="/upload"]'.</msg>
+<arg>//a[@href="/upload"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:09:39.078024" elapsed="0.751865"/>
+</kw>
+<kw name="Normalize Path" owner="OperatingSystem">
+<msg time="2026-03-30T15:09:39.829889" level="INFO">${path} = C:\Users\Pranjal Ameta\OneDrive\Pictures\pedro.jpeg</msg>
+<var>${path}</var>
+<arg>C:\\Users\\Pranjal Ameta\\OneDrive\\Pictures\\pedro.jpeg</arg>
+<doc>Normalizes the given path.</doc>
+<status status="PASS" start="2026-03-30T15:09:39.829889" elapsed="0.000000"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:09:39.834128" level="INFO">Sending C:\Users\Pranjal Ameta\OneDrive\Pictures\pedro.jpeg to browser.</msg>
+<arg>id=file-upload</arg>
+<arg>${path}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:09:39.829889" elapsed="0.058116"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:09:39.888005" level="INFO">Clicking element 'id=file-submit'.</msg>
+<arg>id=file-submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:09:39.888005" elapsed="1.318875"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-30T15:09:41.206880" elapsed="2.176170"/>
+</kw>
+<status status="PASS" start="2026-03-30T15:09:32.117158" elapsed="11.265892"/>
+</test>
+<test id="s1-t2" name="Download" line="20">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:09:43.383050" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-30T15:09:43.383050" elapsed="7.043444"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-30T15:09:50.426494" elapsed="0.034211"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:09:50.464220" level="INFO">Clicking element '//a[@href="/download"]'.</msg>
+<arg>//a[@href="/download"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:09:50.464220" elapsed="0.460506"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T15:09:52.936603" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T15:09:50.928178" elapsed="2.008425"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:09:52.939276" level="INFO">Clicking element '//a[@href="download/file.txt"]'.</msg>
+<arg>//a[@href="download/file.txt"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:09:52.936603" elapsed="0.438932"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T15:09:55.390508" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T15:09:53.375535" elapsed="2.014973"/>
+</kw>
+<kw name="Wait Until Created" owner="OperatingSystem">
+<msg time="2026-03-30T15:09:55.390508" level="INFO" html="true">'&lt;a href="file://C:\Users\Pranjal Ameta\Downloads\file.txt"&gt;C:\Users\Pranjal Ameta\Downloads\file.txt&lt;/a&gt;' was created.</msg>
+<arg>${check_down}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the given file or directory is created.</doc>
+<status status="PASS" start="2026-03-30T15:09:55.390508" elapsed="0.000000"/>
+</kw>
+<kw name="File Should Exist" owner="OperatingSystem">
+<msg time="2026-03-30T15:09:55.390508" level="INFO" html="true">File '&lt;a href="file://C:\Users\Pranjal Ameta\Downloads\file.txt"&gt;C:\Users\Pranjal Ameta\Downloads\file.txt&lt;/a&gt;' exists.</msg>
+<arg>${check_down}</arg>
+<doc>Fails unless the given ``path`` points to an existing file.</doc>
+<status status="PASS" start="2026-03-30T15:09:55.390508" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>File downloaded Successfully</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-30T15:09:55.390508" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-30T15:09:55.390508" elapsed="2.207901"/>
+</kw>
+<status status="PASS" start="2026-03-30T15:09:43.383050" elapsed="14.215359"/>
+</test>
+<status status="PASS" start="2026-03-30T15:09:31.767739" elapsed="25.830670"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Down Upload" id="s1" pass="2" fail="0" skip="0">Down Upload</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

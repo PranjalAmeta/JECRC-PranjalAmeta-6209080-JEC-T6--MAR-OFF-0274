@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-04-02T10:55:57.798934" rpa="false" schemaversion="5">
+<suite id="s1" name="FrameWork" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Day14(2April)\FrameWork.robot">
+<test id="s1-t1" name="checking reports" line="22">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-02T10:55:58.307151" level="INFO">Opening browser 'chrome' to base url 'www.amazon.in'.</msg>
+<msg time="2026-04-02T10:56:00.536659" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-02T10:56:00.536659" level="FAIL">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=146.0.7680.165)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff72abc29c5+2ed785]
+	chromedriver!GetHandleVerifier [0x7ff72a8ea0d0+14e90]
+	chromedriver!(No symbol) [0x7ff72a64d916]
+	chromedriver!(No symbol) [0x7ff72a639b54]
+	chromedriver!(No symbol) [0x7ff72a637f2f]
+	chromedriver!(No symbol) [0x7ff72a638482]
+	chromedriver!(No symbol) [0x7ff72a651de6]
+	chromedriver!(No symbol) [0x7ff72a6f4994]
+	chromedriver!(No symbol) [0x7ff72a6cff8a]
+	chromedriver!(No symbol) [0x7ff72a6f3b9b]
+	chromedriver!(No symbol) [0x7ff72a699298]
+	chromedriver!(No symbol) [0x7ff72a69a183]
+	chromedriver!GetHandleVerifier [0x7ff72abede0d+318bcd]
+	chromedriver!GetHandleVerifier [0x7ff72abe8588+313348]
+	chromedriver!GetHandleVerifier [0x7ff72ac09d7a+334b3a]
+	chromedriver!GetHandleVerifier [0x7ff72a906785+31545]
+	chromedriver!GetHandleVerifier [0x7ff72a90facc+3a88c]
+	chromedriver!GetHandleVerifier [0x7ff72a8f3634+1e3f4]
+	chromedriver!GetHandleVerifier [0x7ff72a8f37e6+1e5a6]
+	chromedriver!GetHandleVerifier [0x7ff72a8d7e37+2bf7]
+	KERNEL32!BaseThreadInitThunk [0x7ffae1b1e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffae30cc48c+2c]
+</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2026-04-02T10:55:58.307151" elapsed="2.311978">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=146.0.7680.165)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff72abc29c5+2ed785]
+	chromedriver!GetHandleVerifier [0x7ff72a8ea0d0+14e90]
+	chromedriver!(No symbol) [0x7ff72a64d916]
+	chromedriver!(No symbol) [0x7ff72a639b54]
+	chromedriver!(No symbol) [0x7ff72a637f2f]
+	chromedriver!(No symbol) [0x7ff72a638482]
+	chromedriver!(No symbol) [0x7ff72a651de6]
+	chromedriver!(No symbol) [0x7ff72a6f4994]
+	chromedriver!(No symbol) [0x7ff72a6cff8a]
+	chromedriver!(No symbol) [0x7ff72a6f3b9b]
+	chromedriver!(No symbol) [0x7ff72a699298]
+	chromedriver!(No symbol) [0x7ff72a69a183]
+	chromedriver!GetHandleVerifier [0x7ff72abede0d+318bcd]
+	chromedriver!GetHandleVerifier [0x7ff72abe8588+313348]
+	chromedriver!GetHandleVerifier [0x7ff72ac09d7a+334b3a]
+	chromedriver!GetHandleVerifier [0x7ff72a906785+31545]
+	chromedriver!GetHandleVerifier [0x7ff72a90facc+3a88c]
+	chromedriver!GetHandleVerifier [0x7ff72a8f3634+1e3f4]
+	chromedriver!GetHandleVerifier [0x7ff72a8f37e6+1e5a6]
+	chromedriver!GetHandleVerifier [0x7ff72a8d7e37+2bf7]
+	KERNEL32!BaseThreadInitThunk [0x7ffae1b1e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffae30cc48c+2c]
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2026-04-02T10:56:00.619129" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>navigated to amazon</arg>
+<arg>Warn</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-04-02T10:56:00.619129" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-04-02T10:56:00.619129" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-04-02T10:55:58.307151" elapsed="2.311978">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=146.0.7680.165)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff72abc29c5+2ed785]
+	chromedriver!GetHandleVerifier [0x7ff72a8ea0d0+14e90]
+	chromedriver!(No symbol) [0x7ff72a64d916]
+	chromedriver!(No symbol) [0x7ff72a639b54]
+	chromedriver!(No symbol) [0x7ff72a637f2f]
+	chromedriver!(No symbol) [0x7ff72a638482]
+	chromedriver!(No symbol) [0x7ff72a651de6]
+	chromedriver!(No symbol) [0x7ff72a6f4994]
+	chromedriver!(No symbol) [0x7ff72a6cff8a]
+	chromedriver!(No symbol) [0x7ff72a6f3b9b]
+	chromedriver!(No symbol) [0x7ff72a699298]
+	chromedriver!(No symbol) [0x7ff72a69a183]
+	chromedriver!GetHandleVerifier [0x7ff72abede0d+318bcd]
+	chromedriver!GetHandleVerifier [0x7ff72abe8588+313348]
+	chromedriver!GetHandleVerifier [0x7ff72ac09d7a+334b3a]
+	chromedriver!GetHandleVerifier [0x7ff72a906785+31545]
+	chromedriver!GetHandleVerifier [0x7ff72a90facc+3a88c]
+	chromedriver!GetHandleVerifier [0x7ff72a8f3634+1e3f4]
+	chromedriver!GetHandleVerifier [0x7ff72a8f37e6+1e5a6]
+	chromedriver!GetHandleVerifier [0x7ff72a8d7e37+2bf7]
+	KERNEL32!BaseThreadInitThunk [0x7ffae1b1e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffae30cc48c+2c]
+</status>
+</test>
+<status status="FAIL" start="2026-04-02T10:55:57.798934" elapsed="2.820195"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="FrameWork" id="s1" pass="0" fail="1" skip="0">FrameWork</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

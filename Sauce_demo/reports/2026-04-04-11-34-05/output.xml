@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-04-04T11:34:05.529635" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Datadriven Login" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Sauce_demo\tests\test_datadriven_login.robot">
+<test id="s1-t1" name="Execl Data Driven Testing" line="30">
+<kw name="Open Application" owner="common_resources" type="SETUP">
+<msg time="2026-04-04T11:34:09.174446" level="FAIL">Keyword 'common_resources.Open Application' expected 0 arguments, got 1.</msg>
+<arg>https://www.saucedemo.com/</arg>
+<doc>Opens the application</doc>
+<status status="FAIL" start="2026-04-04T11:34:09.174446" elapsed="0.000000">Keyword 'common_resources.Open Application' expected 0 arguments, got 1.</status>
+</kw>
+<kw name="Close Application" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-04T11:34:09.174446" elapsed="0.015732"/>
+</kw>
+<status status="PASS" start="2026-04-04T11:34:09.174446" elapsed="0.015732"/>
+</kw>
+<doc>This test case is to perform data driven testing from excel</doc>
+<tag>Data Driven</tag>
+<status status="FAIL" start="2026-04-04T11:34:09.174446" elapsed="0.015732">Setup failed:
+Keyword 'common_resources.Open Application' expected 0 arguments, got 1.</status>
+</test>
+<status status="FAIL" start="2026-04-04T11:34:05.532647" elapsed="3.657531"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Data Driven</stat>
+</tag>
+<suite>
+<stat name="Test Datadriven Login" id="s1" pass="0" fail="1" skip="0">Test Datadriven Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-04-04T11:34:09.142629" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Sauce_demo\tests\test_datadriven_login.robot", line 0</msg>
+<msg time="2026-04-04T11:34:09.142629" level="ERROR">In source file:
+  File "C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Sauce_demo\tests\..\test_data\Data Driven.xlsx", line 0</msg>
+<msg time="2026-04-04T11:34:09.174446" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: ValueError: Worksheet named 'sheet1' not found</msg>
+</errors>
+</robot>

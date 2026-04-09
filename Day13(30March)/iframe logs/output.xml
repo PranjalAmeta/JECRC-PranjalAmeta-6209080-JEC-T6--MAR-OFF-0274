@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-03-30T11:11:46.228873" rpa="false" schemaversion="5">
+<suite id="s1" name="Iframe" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Day13(30March)\Iframe.robot">
+<test id="s1-t1" name="Handling Nested Frame" line="17">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-30T11:11:46.692415" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Frames.html'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-30T11:11:46.692415" elapsed="4.651176"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-30T11:11:51.344603" elapsed="0.061986"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T11:11:51.408596" level="INFO">Clicking element '//a[@href='#Multiple']'.</msg>
+<arg>//a[@href='#Multiple']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T11:11:51.406589" elapsed="0.133074"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T11:11:53.552325" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T11:11:51.539663" elapsed="2.012662"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2026-03-30T11:11:53.554353" level="INFO">Selecting frame 'xpath=//iframe[@src='MultipleFrames.html']'.</msg>
+<arg>xpath=//iframe[@src='MultipleFrames.html']</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2026-03-30T11:11:53.553362" elapsed="0.062539"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2026-03-30T11:11:53.616901" level="INFO">Selecting frame 'xpath=//iframe[@src='SingleFrame.html']'.</msg>
+<arg>xpath=//iframe[@src='SingleFrame.html']</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2026-03-30T11:11:53.615901" elapsed="0.036077"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T11:11:53.652981" level="INFO">Typing text 'ky Bolti public' into text field '//input[@type='text']'.</msg>
+<arg>//input[@type='text']</arg>
+<arg>ky Bolti public</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T11:11:53.652981" elapsed="0.160071"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T11:11:58.816372" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T11:11:53.814052" elapsed="5.002320"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-30T11:11:58.817106" elapsed="2.194052"/>
+</kw>
+<status status="PASS" start="2026-03-30T11:11:46.690475" elapsed="14.321661"/>
+</test>
+<status status="PASS" start="2026-03-30T11:11:46.231850" elapsed="14.781296"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Iframe" id="s1" pass="1" fail="0" skip="0">Iframe</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

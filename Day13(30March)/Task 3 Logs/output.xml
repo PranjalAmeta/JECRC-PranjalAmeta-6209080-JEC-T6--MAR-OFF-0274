@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-03-30T15:59:38.436683" rpa="false" schemaversion="5">
+<suite id="s1" name="Task3" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Day13(30March)\Task3.robot">
+<test id="s1-t1" name="Handling Amazon" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:59:38.819223" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.in/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-30T15:59:38.819223" elapsed="3.825932"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-30T15:59:42.646148" elapsed="0.083432"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>www.amazon.in</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2026-03-30T15:59:42.731588" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>//a[text()=' Electronics ']</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-03-30T15:59:42.731588" elapsed="2.922448"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:59:45.655070" level="INFO">Clicking element 'xpath=//a[text()=' Electronics ']'.</msg>
+<arg>xpath=//a[text()=' Electronics ']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:59:45.654036" elapsed="2.015156"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:59:47.675088" level="INFO">Clicking element '//label[@for='apb-browse-refinements-checkbox_6']/descendant::i'.</msg>
+<arg>//label[@for='apb-browse-refinements-checkbox_6']/descendant::i</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:59:47.674582" elapsed="1.834372"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:59:49.543932" level="INFO">${name} = Boat Rockerz 255 Neo in Ear Bluetooth Neckband with Mic with Enx Tech, Smart Magnetic Buds, ASAP Charge, Upto 25 Hours Playback, 12MM Drivers, Beast Mode, Dual Pairing (Active Black)</msg>
+<var>${name}</var>
+<arg>//span[contains(text(),'Boat Rockerz')]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:59:49.508954" elapsed="0.034978"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:59:49.545268" level="INFO">Clicking element '//span[contains(text(),'Boat Rockerz')]'.</msg>
+<arg>//span[contains(text(),'Boat Rockerz')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:59:49.544937" elapsed="0.219869"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>New</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:59:49.764806" elapsed="0.013915"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${name}</arg>
+<arg>5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-30T15:59:49.778721" elapsed="2.943362"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:59:52.767157" level="INFO">${discount} = -70%</msg>
+<var>${discount}</var>
+<arg>//span[@class="apex-savings-container"]/span</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:59:52.722083" elapsed="0.045074"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:59:52.790833" level="INFO">${dis_prize} = 899</msg>
+<var>${dis_prize}</var>
+<arg>//span[@class="apex-savings-container"]/following-sibling::span/descendant::span[4]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:59:52.767586" elapsed="0.023247"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:59:52.826773" level="INFO">${act_prize} = </msg>
+<var>${act_prize}</var>
+<arg>(//span[@class="a-price a-text-price apex-basisprice-value"]/span)[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:59:52.792003" elapsed="0.035966"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${discount}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-30T15:59:52.828307" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${dis_prize}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-30T15:59:52.829377" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${act_prize}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-30T15:59:52.830376" elapsed="0.000000"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>add-to-cart-button</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-03-30T15:59:52.830376" elapsed="0.328922"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:59:53.160839" level="INFO">Clicking element 'add-to-cart-button'.</msg>
+<arg>add-to-cart-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:59:53.159819" elapsed="1.672606"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T15:59:54.832425" level="INFO">Clicking element 'nav-cart-count-container'.</msg>
+<arg>nav-cart-count-container</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T15:59:54.832425" elapsed="1.892707"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${name}</arg>
+<arg>5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-30T15:59:56.725132" elapsed="0.040653"/>
+</kw>
+<status status="PASS" start="2026-03-30T15:59:38.819223" elapsed="17.947188"/>
+</test>
+<status status="PASS" start="2026-03-30T15:59:38.436683" elapsed="18.330381"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Task3" id="s1" pass="1" fail="0" skip="0">Task3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

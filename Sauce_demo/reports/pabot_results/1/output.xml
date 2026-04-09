@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-04-04T14:11:52.565146" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Sauce_demo\tests">
+<suite id="s1-s1" name="Functional" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Sauce_demo\tests\functional">
+<suite id="s1-s1-s1" name="Test Login Page" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Sauce_demo\tests\functional\test_login_page.robot">
+<test id="s1-s1-s1-t1" name="Checking Login" line="9">
+<kw name="Open Application" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:11:53.397644" level="INFO">Opening browser 'chrome' to base url 'https://sauce-demo.myshopify.com/account/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-04T14:11:53.397644" elapsed="7.917217"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-04T14:12:01.314861" elapsed="0.048452"/>
+</kw>
+<arg>https://sauce-demo.myshopify.com/account/login</arg>
+<doc>Opens the application</doc>
+<status status="PASS" start="2026-04-04T14:11:53.397644" elapsed="7.965669"/>
+</kw>
+<kw name="Log In To Application" owner="Log_in_page">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:12:01.364339" level="INFO">Clicking element 'xpath=(//a[@id="customer_login_link"])[1]'.</msg>
+<arg>${log_in_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T14:12:01.364339" elapsed="0.768763"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-04T14:12:02.134614" level="INFO">Clicking the login Button</msg>
+<arg>Clicking the login Button</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-04T14:12:02.133102" elapsed="0.001512"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:12:02.136632" level="INFO">Typing text 'abc@gmail.com' into text field 'xpath=//input[@id="customer_email"]'.</msg>
+<arg>${email_field}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T14:12:02.134614" elapsed="0.189547"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-04T14:12:02.326180" level="INFO">Entering email</msg>
+<arg>Entering email</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-04T14:12:02.324161" elapsed="0.002019"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:12:02.326180" level="INFO">Typing text 'abc' into text field 'xpath=//input[@id="customer_password"]'.</msg>
+<arg>${pwd_field}</arg>
+<arg>${pwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T14:12:02.326180" elapsed="0.193747"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-04T14:12:02.519927" level="INFO">Entering Password</msg>
+<arg>Entering Password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-04T14:12:02.519927" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-04T14:12:02.528044" level="INFO">Clicking element 'xpath=(//input[@class="button"])[1]'.</msg>
+<arg>${sign_in_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-04T14:12:02.528044" elapsed="0.249670"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-04T14:12:02.779726" level="INFO">Clicking the button</msg>
+<arg>Clicking the button</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-04T14:12:02.777714" elapsed="0.002012"/>
+</kw>
+<arg>abc@gmail.com</arg>
+<arg>abc</arg>
+<doc>is the user able to login</doc>
+<status status="PASS" start="2026-04-04T14:12:01.364339" elapsed="1.415387"/>
+</kw>
+<kw name="Close Application" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-04T14:12:02.787280" elapsed="6.487957"/>
+</kw>
+<status status="PASS" start="2026-04-04T14:12:02.781750" elapsed="6.493487"/>
+</kw>
+<doc>Check if the user is able to login</doc>
+<tag>functional</tag>
+<status status="PASS" start="2026-04-04T14:11:53.380527" elapsed="15.894710"/>
+</test>
+<status status="PASS" start="2026-04-04T14:11:52.631180" elapsed="16.645092"/>
+</suite>
+<status status="PASS" start="2026-04-04T14:11:52.631180" elapsed="16.645092"/>
+</suite>
+<status status="PASS" start="2026-04-04T14:11:52.565146" elapsed="16.711126"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">functional</stat>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="Functional" id="s1-s1" pass="1" fail="0" skip="0">Tests.Functional</stat>
+<stat name="Test Login Page" id="s1-s1-s1" pass="1" fail="0" skip="0">Tests.Functional.Test Login Page</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

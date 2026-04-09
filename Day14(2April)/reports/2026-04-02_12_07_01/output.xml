@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-04-02T12:07:02.222522" rpa="false" schemaversion="5">
+<suite id="s1" name="Args" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Day14(2April)\args.robot">
+<test id="s1-t1" name="Login" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-02T12:07:02.554401" level="INFO">Opening browser 'chrome' to base url 'https://sauce-demo.myshopify.com/account/login'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-02T12:07:02.554401" elapsed="5.144473"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-02T12:07:07.698874" elapsed="0.042797"/>
+</kw>
+<kw name="Login Success">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-02T12:07:07.743679" level="INFO">Typing text 'abc@gmail.com' into text field 'id=customer_email'.</msg>
+<arg>id=customer_email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-02T12:07:07.743679" elapsed="0.164862"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-02T12:07:07.909543" level="INFO">Typing text 'Prank' into text field 'id=customer_password'.</msg>
+<arg>id=customer_password</arg>
+<arg>${pwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-02T12:07:07.909543" elapsed="0.082004"/>
+</kw>
+<arg>abc@gmail.com</arg>
+<arg>Prank</arg>
+<status status="PASS" start="2026-04-02T12:07:07.741671" elapsed="0.249876"/>
+</kw>
+<status status="PASS" start="2026-04-02T12:07:02.554401" elapsed="5.437146"/>
+</test>
+<status status="PASS" start="2026-04-02T12:07:02.224524" elapsed="5.767023"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Args" id="s1" pass="1" fail="0" skip="0">Args</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

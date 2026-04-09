@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-04-04T11:38:19.455115" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Datadriven Login" source="C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Sauce_demo\tests\test_datadriven_login.robot">
+<test id="s1-t1" name="Execl Data Driven Testing" line="30">
+<kw name="Open Application" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-04T11:38:20.781912" level="FAIL">Variable '${BASE_URL}' not found.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER} #${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2026-04-04T11:38:20.780915" elapsed="0.000997">Variable '${BASE_URL}' not found.</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2026-04-04T11:38:20.781912" elapsed="0.000000"/>
+</kw>
+<arg>https://www.saucedemo.com/</arg>
+<doc>Opens the application</doc>
+<status status="FAIL" start="2026-04-04T11:38:20.778911" elapsed="0.003001">Variable '${BASE_URL}' not found.</status>
+</kw>
+<kw name="Close Application" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-04T11:38:20.782942" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-04-04T11:38:20.782942" elapsed="0.000000"/>
+</kw>
+<doc>This test case is to perform data driven testing from excel</doc>
+<tag>Data Driven</tag>
+<status status="FAIL" start="2026-04-04T11:38:20.776892" elapsed="0.006050">Setup failed:
+Variable '${BASE_URL}' not found.</status>
+</test>
+<status status="FAIL" start="2026-04-04T11:38:19.455115" elapsed="1.327827"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Data Driven</stat>
+</tag>
+<suite>
+<stat name="Test Datadriven Login" id="s1" pass="0" fail="1" skip="0">Test Datadriven Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-04-04T11:38:20.773914" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Sauce_demo\tests\test_datadriven_login.robot", line 0</msg>
+<msg time="2026-04-04T11:38:20.773914" level="ERROR">In source file:
+  File "C:\Users\Pranjal Ameta\OneDrive\Desktop\Selenium&amp;Robot\Projects\Sauce_demo\tests\..\test_data\Data Driven.xlsx", line 0</msg>
+<msg time="2026-04-04T11:38:20.776892" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: ValueError: Worksheet named 'sheet1' not found</msg>
+</errors>
+</robot>
